@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select>
+            <option value="01">User information: option 1 select</option>
+            <option value="Delivery 1">Доставка курєром</option>
+            <option value="Delivery 2">Доставка в поштомат</option>
+            <option value="Delivery 3">Доставка самовивіз</option>
+        </select>
+    Select more:
+        <p>
+        <label for="call-me">Call me</label>
+        <input type="checkbox" name="call" value="call" id="call-me">
+        <div>
+            <label for="car">Mazda</label>
+            <input type="checkbox" disabled name="mazda" value="mazda" id="car">
+        </div>
+        <div>
+            <label for="car-ford">Ford</label>
+            <input type="checkbox" name="Ford" value="Ford" id="car-ford">
+        </div>
+        <div>
+            <label for="car-Fiat">Fiat</label>
+            <input type="checkbox" name="Fiat" value="Fiat" id="car-Fiat">
+        </div>
+    </p>
+    </form>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Alex"><br>
+        <label for="lname">Last name:</label><br> <!-- label for для напису значення кнопки -->
+        <input type="text" id="lname" name="lname" value="Stone"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"> <!-- input type для створення кнопки -->
+      </form>
+      <p>
+        <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        </form>
+      </p>
+      <p>
+        <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </form>
+      </p>
+      <p>
+        <form>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+          </form>
+      </p>
+      <p>
+        <form>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+          </form>
+      </p>
+      <p>
+        <form>
+            <label for="Quantity">Number (between 1 and 10):</label>
+            <input type="Quantity" id="quantity" name="Quantity" min="1" max="10">
+          </form>
+      </p>
+</body> 
+</html>
