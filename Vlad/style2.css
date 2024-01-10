@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+#parent{
+    display: flex;
+    background: blue;
+    border-radius: 60%;
+    width: 50vw;
+    height: 75vh; 
+    justify-content:center ;
+    align-items:center;
+    
+}
+
+
+.red{
+    background: red;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+#mouse {
+    position: absolute;
+    color: white;
+    
+bottom: 160px;}
+
+#nose {
+    position: absolute;
+    bottom: 235px;
+    color: white;
+}
+    
+   #eyer{
+    position: absolute;
+margin-left: 13%;
+   }
+   #eyel{position: absolute;
+    margin-right: 13%;
+
+   }
