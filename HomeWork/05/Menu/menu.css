@@ -1,10 +1,11 @@
 *{
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    background-color: cornflowerblue;
 }
 .second-font{
     font-family: 'Inter', sans-serif;
@@ -19,7 +20,7 @@ body{
 .wrapper{
     width: 360px;
     height: 800px;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 20px;
 }
 #icon{
@@ -33,23 +34,23 @@ header p{
     font-size: 32px;
     font-family: 600;
     position: relative;
-    top: -652px;
+    top: -700px;
     left: 22px;
 }
-#search, input{
+input{
     background-color: #EFEFEF;
     width: 316px;
     height: 44px;
     border-radius: 12px;
     position: relative;
-    top: -640px;
+    top: -715px;
     left: 24px;
-}
-input{
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 400;
     border: none;
+    padding: 15px;
+    color: #999;
 }
 .food{
     width: 74px;
@@ -57,8 +58,15 @@ input{
     background-color: #EAE2B7;
     border-radius: 12px;
     position: relative;
-    top: -630px;
+    top: -685px;
     left: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food img{
+    width: 37px;
+    height: 37px;
 }
 .drinks{
     width: 74px;
@@ -66,8 +74,15 @@ input{
     background-color: #EFEFEF;
     border-radius: 12px;
     position: relative;
-    top: -702px;
+    top: -758px;
     left: 122px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.drinks img{
+    width: 37px;
+    height: 37px;
 }
 .dessert{
     width: 74px;
@@ -75,8 +90,15 @@ input{
     background-color: #EFEFEF;
     border-radius: 12px;
     position: relative;
-    top: -776px;
+    top: -832px;
     left: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dessert img{
+    width: 37px;
+    height: 37px;
 }
 .food p{
     width: 39px;
@@ -91,6 +113,7 @@ input{
     position: absolute;
     top: 67px;
     left: 14px;
+    color: #C4C4C4;
 }
 .dessert p{
     width: 39px;
@@ -98,7 +121,96 @@ input{
     position: absolute;
     top: 67px;
     left: 8px;
+    color: #C4C4C4;
 }
-p{
-    
+#burger{
+    position: absolute;
+    top: 349px;
+    left: 28px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.block-1{
+    width: 316px;
+    height: 88px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    position: relative;
+    top: -744px;
+    left: 26px;
+}
+.block-2{
+    width: 316px;
+    height: 88px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    position: relative;
+    top: -745px;
+    left: 26px;
+}
+.block-3{
+    width: 316px;
+    height: 88px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    position: relative;
+    top: -746px;
+    left: 26px;
+}
+.block-1 img{
+    width: 60px;
+    height: 68.5px;
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+.block-1 p{
+    position: relative;
+    top: 22px;
+    left: 96px;
+}
+.block-2 img{
+    width: 60.8px;
+    height: 55px;
+    position: absolute;
+    top: 16px;
+    left: 18px;
+}
+.block-2 p{
+    position: relative;
+    top: 22px;
+    left: 96px;
+}
+.block-3 img{
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 19px;
+    left: 14px;
+}
+.block-3 p{
+    position: relative;
+    top: 22px;
+    left: 96px;
+}
+.price-1{
+    position: relative;
+    top: -989px;
+    left: 122px;
+    color: #D62828;
+}
+.price-2{
+    position: relative;
+    top: -905px;
+    left: 122px;
+    color: #D62828;
+}
+.price-3{
+    position: relative;
+    top: -824px;
+    left: 122px;
+    color: #D62828;
 }
