@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.second-font{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.third-font{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.wrapper{
+    width: 360px;
+    height: 800px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    padding: 56px 302px 714px 28px;
+}
+header p{
+    width: 87px;
+    height: 39px;
+    font-size: 32px;
+    font-family: 600;
+    position: relative;
+    top: -652px;
+    left: 22px;
+}
+#search, input{
+    background-color: #EFEFEF;
+    width: 316px;
+    height: 44px;
+    border-radius: 12px;
+    position: relative;
+    top: -640px;
+    left: 24px;
+}
+input{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+}
+.food{
+    width: 74px;
+    height: 74px;
+    background-color: #EAE2B7;
+    border-radius: 12px;
+    position: relative;
+    top: -630px;
+    left: 24px;
+}
+.drinks{
+    width: 74px;
+    height: 74px;
+    background-color: #EFEFEF;
+    border-radius: 12px;
+    position: relative;
+    top: -702px;
+    left: 122px;
+}
+.dessert{
+    width: 74px;
+    height: 74px;
+    background-color: #EFEFEF;
+    border-radius: 12px;
+    position: relative;
+    top: -776px;
+    left: 220px;
+}
+.food p{
+    width: 39px;
+    height: 19px;
+    position: absolute;
+    top: 67px;
+    left: 17px;
+}
+.drinks p{
+    width: 39px;
+    height: 19px;
+    position: absolute;
+    top: 67px;
+    left: 14px;
+}
+.dessert p{
+    width: 39px;
+    height: 19px;
+    position: absolute;
+    top: 67px;
+    left: 8px;
+}
+p{
+    
+}
