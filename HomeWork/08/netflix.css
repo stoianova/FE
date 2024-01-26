@@ -6,8 +6,7 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
-    /* margin: 0 auto; */
-    /* max-width: 1728px; */
+    margin: 0 auto;
     font-family: 'Inter', sans-serif;
     
 }
@@ -43,7 +42,7 @@ header{
     margin-right: 26px;
 }
 .content-wrapper{
-    max-width: 1728x;
+    width: 57.3%;
     color: #fff;
     padding-left: 80px;
 }
@@ -203,7 +202,7 @@ p{
     display: flex;
 }
 #m-1, #m-2, #m-3, #m-4, #m-5{
-    margin-right: 40px;
+    margin-right: 3.5%;
 }
 .fixed{
     width: 174px;
