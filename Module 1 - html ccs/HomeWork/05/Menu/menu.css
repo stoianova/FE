@@ -214,3 +214,31 @@ input{
     left: 122px;
     color: #D62828;
 }
+* {
+    min-height: ;
+  }
+  
+  .block-3 p {
+    width: 170px;
+  }
+  
+  .price-3 {
+    width: 170px;
+  }
+  
+  .price-2 {
+    width: 170px;
+  }
+  
+  .block-2 p {
+    width: 170px;
+  }
+  
+  .price-1 {
+    width: 170px;
+  }
+  
+  .block-1 p {
+    width: 170px;
+  }
+  
