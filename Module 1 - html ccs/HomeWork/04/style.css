@@ -1,28 +1,30 @@
 *{
 box-sizing: border-box;
+margin: 0 auto;
+text-align: center;
 }
 header{
-    width: auto;
-    background-color: white;
-    height: 161px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-header img{
-    padding: 61px 61px 61px 250px;
+#twitter{
+    padding-left: 30px;
 }
 section{
     background-color: #FAC960;
-    width: 16px auto;
+    text-align: center;
     height: 421px;
-    padding: 50px 350px;
+    padding: 50px;
 }
 h1{
     font-size: 44px;
     color: #8A6D2F;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
     font-weight: 400;
     line-height: 54px;
+    padding-top: 15px;
 }
 input{
     width: 520px;
@@ -31,10 +33,10 @@ input{
     border: 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
     line-height: 54px;
-    padding: 0px 20px;
+    position: relative;
+    top: 55px;
 }
 button{
     color: white;
@@ -46,15 +48,16 @@ button{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
     line-height: 54px;
+    position: relative;
+    top: 55px;
 }
 main{
     background-color: #F2F2F2; 
     height: 438px;
     width: 16px auto;
-    padding: 50px 350px;
+    padding-top: 70px;
 
 }
 h2{
@@ -65,6 +68,7 @@ h2{
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
+    padding-bottom: 40px;
 }
 main h4{
     width: 819px;
@@ -81,26 +85,25 @@ main p{
     padding-top: 56px ;
 }
 nav{
-    margin-top: 90px;
+    margin-top: 80px;
     background-color: white;
 }
 nav h4{
     width: 819px;
     color: slategray;
-    margin: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 23px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    padding-bottom: 30px;
 }
 nav p{
-    text-align: center;
+    padding-bottom: 20px;
 }
 article{
     background-color: #FAC960;
-    text-align: center;
-    padding: 50px 350px;
+    padding-top: 50px;
+    padding-bottom: 80px;
 }
 article h4{
     background-color: #FAC960;
@@ -108,27 +111,32 @@ article h4{
     color: #8A6D2F;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
     font-weight: 400;
     line-height: 36px;
+    padding-bottom: 20px;
 }
 article h6{
     text-align: center;
     color: #8A6D2F;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    padding-bottom: 20px;
 }
 footer{
     background-color: white;
     height: 240px;
-    text-align: center;
     padding-top: 80px;
 }
 footer div{
     padding-bottom: 15px;
 }
-footer p{
+
+#facebook2{
+    padding-right: 20px;
+    padding-top: 100px;
+}
+#twitter2{
+    padding-right: 20px;
 }
