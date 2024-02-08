@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: cornflowerblue;
+}
+.wrapper{
+    width: 360px;
+    height: 800px;
+    padding-left: 24px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+header{
+    height: 209px;
+    /* padding: 15px; */
+}
+#icon{
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+header p{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+}
+input{
+    background-color: #EFEFEF;
+    width: 316px;
+    height: 44px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+    color: #999;
+    padding-left: 15px;
+}
+#search{
+    padding-top: 17px;
+}
+.windows{
+    display: flex;
+    padding-top: 54px;
+    position: relative;
+    left: -18px;
+}
+.food{
+    width: 74px;
+    height: 74px;
+    background-color: #EAE2B7;
+    border-radius: 12px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: 39px;
+}
+.drinks{
+    width: 74px;
+    height: 74px;
+    background-color: #EFEFEF;
+    border-radius: 12px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 115px;
+    top: 39px;
+}
+.dessert{
+    width: 74px;
+    height: 74px;
+    background-color: #EFEFEF;
+    border-radius: 12px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 211px;
+    top: 39px;
+}
+.burger-main{
+    /* padding-left: 24px; */
+    padding-top: 97px;
+    color: rgb(0, 48, 73);
+    font-size: 20px;
+    font-weight: 500;
+}
+.range{
+    display: flex;
+    font-weight: 500;
+    padding-top: 8px;
+    position: relative;
+    top: 64px;
+}
+#food{
+    color: black;
+    position: relative;
+    right: 12px;
+}
+#drinks{
+    color: #999;
+    position: relative;
+    right: 22px;
+}
+#dessert{
+    color: #999;
+    position: relative;
+    right: 42px;
+}
+
+main{
+    position: relative;
+    top: 33px;
+    right: 5px;
+}
+
+.big-mac, .kfc, .fish{
+    Width: 316px;
+    Height: 88px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 0px #E5E5E5;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bm-name{
+    position: relative;
+    left: -28px;
+    bottom: 11px;
+    color: rgb(0, 48, 73);
+}
+#kfc-name{
+    position: relative;
+    left: -13px;
+    bottom: 11px;
+    color: rgb(0, 48, 73);
+}
+#fish-name{
+    position: relative;
+    left: -21px;
+    bottom: 20px;
+    color: rgb(0, 48, 73);
+}
+#kfc-price{
+    color: rgb(214, 40, 40);
+    position: relative;
+    left: -139px;
+    bottom: -13px;
+}
+#bm-price{
+    color: rgb(214, 40, 40);
+    position: relative;
+    left: -137px;
+    bottom: -13px;
+}
+#fish-price{
+    color: rgb(214, 40, 40);
+    position: relative;
+    left: -139px;
+    bottom: -3px;
+}
