@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    min-width: 1440px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.content-wrapper{
+    max-width: 1080px;
+    max-height: 2037px;
+    padding-top: 95px;
+    padding-left: 180px;
+}
+.popular{
+    Width: 742px;
+    height: 200px;
+    margin-bottom: 110px;
+    font-size: 90px;
+}
+.grid{
+    display: grid;
+    grid-gap: 100px;
+    grid-template-areas:
+    "grid-first grid-second"
+    "grid-third grid-forth";
+}
+
+.grid-first{
+    grid-area: grid-first;
+    width: 540px;
+    height: 580px;
+}
+.grid-second{
+    grid-area: grid-second;
+    width: 360px;
+    height: 613px;
+    grid-column-gap: 200px;
+}
+.grid-third{
+    grid-area: grid-third;
+    width: 360px;
+    height: 615px;
+}
+.grid-forth{
+    grid-area: grid-forth;
+    width: 540px;
+    height: 584px;
+}
+
+.first-category,
+.second-category,
+.third-category,
+.forth-category {
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: rgb(181, 189, 196);
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.first-text,
+.second-text,
+.third-text,
+.forth-text {
+    font-weight: 600;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.first-lorem,
+.second-lorem,
+.third-lorem,
+.forth-lorem {
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: darkgray;
+}
