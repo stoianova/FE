@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+
+/* хэдэр */
+
+header{
+    width: 100%;
+    min-height: 80px;
+    background-color: rgb(102, 142, 104);
+    color: white;
+    padding-left: 405px;
+    align-content: center;
+}
+
+.nav-link{
+    padding-right: 405px;
+}
+
+.nav-link,
+.navbar-brand,
+.nav-link.active{
+    color: #fff;
+}
+
+/* 2й блок */
+
+.first-image{
+    height: 520px;
+    background-image: url(img/メインビジュアル.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-text{
+    margin-top: 60px;
+    margin-bottom: 39px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 3й блок */
+
+.menu-text{
+    display: flex;
+}
+
+.third-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drink-block,
+.cakes-block,
+.foods-block{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.drink-text,
+.cakes-text,
+.foods-text{ 
+    /* display: flex; 
+    justify-content: center; 
+     align-content: end; 
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 350px;
+    height: 91px;
+    padding-top: 23px;
+    padding-bottom: 38px;
+    position: relative;
+    top: 250px;
+} */
+    width: 350px;
+    height: 91px;
+    padding-top: 23px;
+    padding-bottom: 38px;
+    background-color: rgba(255, 255, 255, 0.803);
+    text-align: center;
+    font-size: 30px;
+}
+
+.drink-img,
+.cakes-img,
+.foods-img{
+    width: 350px;
+    height: 350px;
+    background-image: url(img/drinks\ 1\ \(2\).png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 9px solid rgb(129, 97, 59);
+    /**/
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.cakes-img{
+    background-image: url(img/drinks\ 1\ \(1\).png);
+}
+
+.foods-img{
+    background-image: url(img/drinks\ 1.png);
+}
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-more{
+    width: 160px;
+    height: 40px;
+    background-color: rgb(102, 142, 104);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-top: 39px;
+    margin-bottom: 62px;
+}
+
+.about-page{
+    background-image: url(img/cafe\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;;
+    min-height: 600px;
+}
+
+.about-text-one{
+    padding-top: 138px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text-two{
+    padding-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-center-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+/* 4й блок */
+
+.forth-block{
+    height: 406px;
+    background-color: rgba(129, 97, 59, 0.2);
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.news{
+    padding-top: 62px;
+    margin-bottom: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+}
+
+.article{
+    width: 1109px;
+    height: 102px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 96px;
+    background-color: white;
+    border: 1px solid rgb(102, 142, 104);
+    margin: 0 auto;
+}
+
+/* 5й блок */
+
+.fifth-block{
+    height: 180px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.wrapper{
+    width: 1109px;
+    justify-content: space-between;
+}
+
