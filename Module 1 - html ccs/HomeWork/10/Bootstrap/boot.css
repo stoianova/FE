@@ -7,23 +7,32 @@ body{
 
 /* хэдэр */
 
+
 header{
     width: 100%;
-    min-height: 80px;
+    min-height: 100px;
     background-color: rgb(102, 142, 104);
-    color: white;
-    /* padding-left: 405px; */
-    /* align-content: center; */
 }
 
-.nav-link{
-    padding-right: 180px;
+.container-fluid{
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
-.nav-link,
-.navbar-brand,
-.nav-link.active{
+.navbar-brand{
+    margin-right: 25%;
     color: #fff;
+}
+
+.navbar{
+    --bs-navbar-active-color:rgba(255, 255, 255);
+}
+:hover.navbar-brand{
+    color: rgb(222, 235, 223);
+}
+
+.nav-item:last-child{
+    padding-right: 0px;
 }
 
 /* 2й блок */
@@ -166,7 +175,6 @@ header{
     padding-bottom: 96px;
     background-color: white;
     border: 1px solid rgb(102, 142, 104);
-    /* margin: 0 auto; */
 }
 
 /* 5й блок */
