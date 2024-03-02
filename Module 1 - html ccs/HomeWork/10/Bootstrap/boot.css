@@ -7,20 +7,22 @@ body{
 
 /* хэдэр */
 
-
 header{
     width: 100%;
     max-height: 100px;
     background-color: rgb(102, 142, 104);
 }
 
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  
 .container-fluid{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .navbar-brand{
-    margin-right: 25%;
     color: #fff;
 }
 
