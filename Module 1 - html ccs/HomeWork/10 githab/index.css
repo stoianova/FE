@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+
+/* хэдэр */
+
+header{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(102, 142, 104);
+}
+
+@media (max-width: 1400px){
+    header{
+        min-height: 100px;
+    }
+}
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  
+.container-fluid{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.navbar{
+    --bs-navbar-active-color:rgba(255, 255, 255);
+}
+:hover.navbar-brand{
+    color: rgb(222, 235, 223);
+}
+
+.nav-item:last-child{
+    padding-right: 0px;
+}
+
+/* 2й блок */
+
+.first-image{
+    height: 520px;
+    background-image: url(img/メインビジュアル.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-text{
+    margin-top: 60px;
+    margin-bottom: 39px;
+}
+
+/* 3й блок */
+
+.menu-text{
+    display: flex;
+}
+
+.drink-text,
+.cakes-text,
+.foods-text{ 
+    width: 350px;
+    height: 91px;
+    background-color: rgba(255, 255, 255, 0.803);
+    text-align: center;
+}
+
+.drink-img,
+.cakes-img,
+.foods-img{
+    width: 350px;
+    height: 350px;
+    background-image: url(img/drinks\ 1\ \(2\).png);
+    background-size: cover;
+    border: 9px solid rgb(129, 97, 59);    
+}
+.cakes-img{
+    background-image: url(img/drinks\ 1\ \(1\).png);
+}
+
+.foods-img{
+    background-image: url(img/drinks\ 1.png);
+}
+
+.see-more{
+    width: 160px;
+    height: 40px;
+    background-color: rgb(102, 142, 104);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-bottom: 62px;
+}
+
+.about-page{
+    background-image: url(img/cafe\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;;
+    min-height: 600px;
+}
+
+.about-text-one{
+    padding-top: 138px;
+}
+
+.about-text-two{
+    padding-top: 32px;
+}
+
+/* 4й блок */
+
+.forth-block{
+    height: 406px;
+    background-color: rgba(129, 97, 59, 0.2);
+}
+
+.news{
+    padding-top: 62px;
+    margin-bottom: 62px;
+    text-align: center;
+}
+
+.article{
+    height: 102px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 96px;
+    background-color: white;
+    border: 1px solid rgb(102, 142, 104);
+    line-height: 35px;
+}
+
+@media (max-width: 768px){
+    .article{
+        height: 250px;
+    }
+}
+
+/* 5й блок */
+
+.fifth-block{
+    height: 180px;
+    padding-top: 20px;
+}
+
+.wrapper{
+    width: 1109px;
+}
+
