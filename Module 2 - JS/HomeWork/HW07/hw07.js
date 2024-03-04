@@ -92,5 +92,5 @@ console.log(ulArr);
 let listItems = document.querySelectorAll('ul.nav > li');
 console.log(listItems);
 
-let childItem = document.querySelectorAll('ul.nav > li:nth-child(2)');
+let childItem = document.querySelectorAll('li :nth-child(2)');
 console.log(childItem);
