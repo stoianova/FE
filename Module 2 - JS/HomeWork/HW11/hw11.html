@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hw11.js"></script>
+    
+    <style>
+        form{
+            border: 2px solid rgba(79, 100, 182, 0.733);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 5px;
+            width: 600px;
+            background-color: #749ae860;
+            margin: 0 auto;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+            margin-top: 30px;
+            background-color: #376fe082;
+        }
+        #uah,
+        #usd{
+            padding: 10px;
+            margin: 0px 15px 0px 15px;
+            background-color: #ff995a46;
+            border: 1px solid #9b6746;
+        }
+        .button-62 {
+            background: linear-gradient(to bottom right, #376fe0, #FF9A5A);
+            border: 0;
+            border-radius: 12px;
+            color: #000000;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            }
+
+            .button-62:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+            }
+
+            .button-62:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+            }
+
+        span{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+            
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <span>
+            Currency rate:
+            1 USD = 40 UAH
+        </span>
+        <div class="wrapper">
+            <input type="number" name="uah" id="uah" placeholder="Введіть суму в UAH">
+
+        <button class="button-62" role="button">Button 62</button>
+
+        <input type="number" name="usd" id="usd" placeholder="Введіть суму в USD">
+        </div>
+         
+        <p id="inuah"></p>
+        <p id="inusd"></p>
+        
+    </form>
+
+    
+
+</body>
+</html>
+
+    
