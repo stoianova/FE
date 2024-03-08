@@ -21,12 +21,17 @@ window.onload = function(){
     event.preventDefault();
     let uahValue = event.target['uah'].value;
     let usdValue = event.target['usd'].value;
-    if(uahValue!=0 && usdValue.length ==0){
+    if(uahValue!=0 && usdValue.length ==0 && uahValue>0 ){
         pUAH.innerHTML= 'Ви отримаєте '+uahValue/40 +'USD';
+        pUAH.style.display = 'inherit';
+        pUSD.style.display = 'none';
     }
-    else if (usdValue!=0 && uahValue.length ==0){
+    else if (usdValue!=0 && uahValue.length ==0 && usdValue>0){
         pUSD.innerHTML= 'Ви отримаєте '+usdValue*40 +'UAH';
+        pUSD.style.display = 'inherit';
+        pUAH.style.display = 'none';
     }
+
     else{
         alert('Введіть тільки UAH або USD');
     }
