@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="hw12.js"></script>
+
+    <style>
+        .color1{
+            width: 50px;
+            height: 25px;
+            background-color: cornflowerblue;
+        }
+        .color2{
+            width: 50px;
+            height: 25px;
+            background-color: rgba(227, 216, 169, 0.773);
+        }
+        .color3{
+            width: 50px;
+            height: 25px;
+            background-color: crimson;
+        }
+        .color4{
+            width: 50px;
+            height: 25px;
+            background-color: rgba(100, 177, 177, 0.686);
+        }
+        .color5{
+            width: 50px;
+            height: 25px;
+            background-color: rgb(188, 146, 188);
+        }
+        .task1{
+            display: flex;
+        }
+        .first,
+        .second,
+        .third,
+        .forth,
+        .fifth{
+            margin: 20px;
+            border: 2px solid rgb(203, 203, 203);
+            padding: 10px;
+            background-color: white;
+        }
+        .task2{
+            margin: 20px;
+            border: 2px solid rgb(203, 203, 203);
+            padding: 10px;
+            background-color: white;
+            width: 150px;
+        }
+        label{
+            margin: 10px;
+        }
+        img{
+            width: 400px;
+           
+        }
+        p{
+            width: 400px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<form class="task1">
+        <div class="first">
+            <div class="color1"></div>
+            <input type="radio" name="color" id="color1" value="blue">
+        </div>
+        
+        <div class="second">
+            <div class="color2"></div>
+            <input type="radio" name="color" id="color2" value="yellow"
+            >
+        </div>
+        
+        <div class="third">
+            <div class="color3"></div>
+            <input type="radio" name="color" id="color3" value="red">
+        </div>
+        
+        <div class="forth">
+            <div class="color4"></div>
+            <input type="radio" name="color" id="color4" value="olive">
+        </div>
+
+        <div class="fifth">
+            <div class="color5"></div>
+            <input type="radio" name="color" id="color5" value="violet">
+        </div>
+    </form>
+
+<form class="task2">        
+        <label for="books">Books</label>
+        <input type="checkbox" name="checkbox" id="books" value="books"> <br>
+
+        <label for="dance">Dance</label>
+        <input type="checkbox" name="checkbox" id="dance" value="dance"> <br>
+
+        <label for="paint">Painting</label>
+        <input type="checkbox" name="checkbox" id="paint" value="paint"> <br>
+
+        <label for="sport">Sport</label>
+        <input type="checkbox" name="checkbox" id="sport" value="sport"> <br>
+
+        <label for="sing">Singing</label>
+        <input type="checkbox" name="checkbox" id="sing" value="sing"> <br>
+      
+        <div class="text"></div>
+</form>
+
+    <form class="task3">
+        <select name="selectEl" id="selectEl">
+            <option value="choose">Choose country</option>
+            <option value="iceland">Iceland</option>
+            <option value="sweden">Sweden</option>
+            <option value="norway">Norway</option>
+        </select>
+
+        <div class="pics">
+        </div>
+
+    
+
+
+    </form>
+
+</body>
+</html>
