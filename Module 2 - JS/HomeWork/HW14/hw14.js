@@ -18,7 +18,8 @@ window.onload = function (){
     // поле ввода телефону
 
     let numberInput = document.querySelector ('#number');
-    let numberRegex = /^[+]\d{12}$/;
+    // let numberRegex = / *(?=.*[380])+\d{9}$/;
+    let numberRegex = /^[3][8][0]\d{9}$/;
 
 
     // поле вводу пароля
@@ -63,7 +64,7 @@ window.onload = function (){
             mybut.disabled=true
         }
         else if(numberRegex.test(valueNumber) ===false ){
-            myAlert.innerHTML = '<p>Number should starts from +380*********</p> '
+            myAlert.innerHTML = '<p>Number should starts from 380*********</p> '
             mybut.disabled=true
         }
         else if(emailRegex.test(emailText) ===false ){
