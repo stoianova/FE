@@ -28,6 +28,8 @@ window.onload = function(){
 
 let planetBtn = document.querySelector('#planetBtn');
 let infoBlock = document.querySelector('#planetInfo');
+let mainDiv = document.querySelector('#main');
+let divFilm = document.querySelector('#film');
 
 planetBtn.addEventListener('click', function fetchInfo(){
     fetch('https://swapi.dev/api/planets/1/')
@@ -38,16 +40,26 @@ planetBtn.addEventListener('click', function fetchInfo(){
         let planetGravity = json.gravity;
         let planetPopulation = json.population;
         let planetRotation = json.rotation_period;
+        let planetFilm = json.films;
 
-        infoBlock.style.display = 'inherit';
+        mainDiv.style.display = 'inherit';
+
+        let newVal = '';
+        planetFilm.forEach(element => {
+            newVal += `<a href="${element}">${element}`
+        });
+
+        newVal += '</a>';
 
         infoBlock.innerHTML = `
         <p> Name: ${planetName} </p>
         <p> Climate: ${planetClimate} </p>
         <p> Gravity: ${planetGravity} </p>
         <p> Population: ${planetPopulation} </p>
-        <p> Planet rotation: ${planetRotation} </p>`
-        
+        <p> Planet rotation: ${planetRotation} </p>
+        Films: <br> ${newVal}`
+ 
     }) 
+    
 })
 

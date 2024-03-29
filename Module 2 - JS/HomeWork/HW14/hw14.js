@@ -40,6 +40,16 @@ window.onload = function (){
         let mybut = document.querySelector("#submitButton")
         let myAlert = document.querySelector("#alert")
 
+        // let link = document.querySelector('a');
+
+        // myForm.addEventListener('contextmenu', function(e){
+        //     e.preventDefault();
+        // })
+
+        // link.addEventListener('contextmenu', function(e){
+        //     e.preventDefault();
+        // })    
+
         myForm.addEventListener("input", function(){
         let valueEmail = emailText.value;
         let userNameValue = userName.value;
@@ -72,9 +82,14 @@ window.onload = function (){
             mybut.disabled=true
         }
         else {
-            mybut.disabled=true
+            mybut.disabled=true   
         }
        })
+       
+       let a ="second.html"
+       mybut.addEventListener("click", function(){
+        window.open(a,"_blank" );
+    })
 
 
 }
