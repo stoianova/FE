@@ -73,17 +73,19 @@ const menuData = [
     { name: 'Послуги', url: '/services' },
 ];
 
-let newLinkFirst = document.createElement('a');
-newLinkFirst.setAttribute('href', menuData[0].url);
-newLinkFirst.innerText = menuData[0].name;
+menuData
 
-let newLinkSecond = document.createElement('a');
-newLinkSecond.setAttribute('href', menuData[1].url);
-newLinkSecond.innerText = menuData[1].name;
+// let newLinkFirst = document.createElement('a');
+// newLinkFirst.setAttribute('href', menuData[0].url);
+// newLinkFirst.innerText = menuData[0].name;
 
-let newLinkThird = document.createElement('a');
-newLinkThird.setAttribute('href', menuData[2].url);
-newLinkThird.innerText = menuData[2].name;
+// let newLinkSecond = document.createElement('a');
+// newLinkSecond.setAttribute('href', menuData[1].url);
+// newLinkSecond.innerText = menuData[1].name;
+
+// let newLinkThird = document.createElement('a');
+// newLinkThird.setAttribute('href', menuData[2].url);
+// newLinkThird.innerText = menuData[2].name;
 
 containerHeader.appendChild(newLinkFirst);
 containerHeader.appendChild(newLinkSecond);

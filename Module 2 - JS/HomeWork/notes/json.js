@@ -1,4 +1,4 @@
-let product ={
+let product = {
     productName:'Laptop',
     productPrice:'1000$'
 }

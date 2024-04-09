@@ -25,29 +25,21 @@ function divide(firstNumber, secondNumber){
 let multiplicationNumber = Number(prompt("Выберите число для таблицы умножения"));
 
 for (let i = 1; i < 10; i++){
-    console.log(`${multiplicationNumber} * ${2} = ${multiplicationNumber * 2}` )};
-     console.log(`${multiplicationNumber} * ${3} = ${multiplicationNumber * 3}` )
-    console.log(`${multiplicationNumber} * ${4} = ${multiplicationNumber * 4}` )
-    console.log(`${multiplicationNumber} * ${5} = ${multiplicationNumber * 5}` )
-    console.log(`${multiplicationNumber} * ${6} = ${multiplicationNumber * 6}` )
-    console.log(`${multiplicationNumber} * ${7} = ${multiplicationNumber * 7}` )
-    console.log(`${multiplicationNumber} * ${8} = ${multiplicationNumber * 8}` )
-    console.log(`${multiplicationNumber} * ${9} = ${multiplicationNumber * 9}` ) 
-
+    console.log(`${multiplicationNumber}*${i} = ${multiplicationNumber*i}`);
+}
 
 
 // - створити switch  в якому є назви планет сонячної системи. Якщо користувач вводить назву планети сонячної системи то виводити ця планета в сонячній системі. Якщо такої планети нема то виводити: такої планети нема в сонячній системі 
-
+let planet = prompt('Напишіть свою улюблені планету')
  switch (planet) {
     case 'Меркурій':
     case 'Венера':
     case 'Земля':
-        console.log(`${planet} Ви вгадали`);
-        break;
     case 'Юпітер':
     case 'Сатурн':
     case 'Уран':
     case 'Нептун':
+        console.log(`${planet} Ви вгадали`);
         break;
     default:
         console.log(`${planet} В цьому списку її немає`);
@@ -57,8 +49,7 @@ for (let i = 1; i < 10; i++){
 
 
 // - за допомогою циклу вивести в консоль всі парні значення числа 20
-let = userNumber
-for(i=1; i/2; i++){
+for(i=2; i<=2; i+=2){
     console.log(`${i}Ділиться на 2`)
 }
 
@@ -71,6 +62,7 @@ for(let i=10; i<10; i--){
 
 // - реалізуйте таблицю множення за допомогою циклу для конкретного числа (наприклад, для числа 5) за допомогою циклу for:
 
-for( let i=1; i=8; i++ ){
-    console.log(`${i} * 5 = ${i*5}`);
+let myNewNumber = 5;
+for(let i=0; i<10; i++){
+    console.log(`${myNewNumber}*${i} = ${myNewNumber*i}`);
 }
