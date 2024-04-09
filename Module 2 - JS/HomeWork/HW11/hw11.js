@@ -47,10 +47,34 @@ window.onload = function(){
 
 // 2) Створіть слайдер ( зображення що міняє картинку ) кожні 3 секунди,  коли курсор наведено на зображення слайдер зупиняється, коли покидає зображення розпочинає роботу
 
+
+    let images = ['./imgSlider/Penguins.jpg','./imgSlider/pingviny_antarktidy.jpg','./imgSlider/Pygoscelis_papua.jpg','./imgSlider/wpapers_ru.jpg'];
+
+    let sliderImg = document.querySelector('img');
+
+    let curentIndex = 0;
+
+    function newPic(){
+        curentIndex += 1;
+        if(curentIndex >= images.length){
+            curentIndex = 0;
+        }
+                        
+        document.querySelector('img').src = images[curentIndex];
+    }
+
+    let slideInterval = setInterval(newPic, 2000); 
+
+    sliderImg.addEventListener('mouseleave', function(){
+        slideInterval = setInterval(newPic, 2000);
+
+    });
+
+    sliderImg.addEventListener('mouseenter', function(){
+        clearInterval(slideInterval);
+
+    });
     
-
-
-
 
 
 

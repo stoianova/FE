@@ -1,16 +1,20 @@
 // Створіть функцію wellcomUser, яка приймає масив і функцію-колбек hiUser яка виводить в console ('Вітаю ${user}'), і викликає цю функцію для кожного елемента масиву.
 
-let myFun = ['Sasha'];
-function wellcomUser (myFun){
-    return 'hiUser ';
+function hiUser(name){
+    console.log(`Hello ${name}`); 
 }
-wellcomUser(myFun);
-console.log(`Вітаю ${myFun}`);
+function wellcomUser(name, callback){
+    name.forEach(names => {
+        return callback(names)
+    });
+}
+
+let arrName = ['Sasha', 'Vlad', 'Maks']
+wellcomUser(arrName, hiUser)
+
 
 // перепишіть попередню функцію в стрілкову
-wellcomUser ((myFun) => {
-    return myFun;
-});
+let hiUser = (name) => console.log (`Hello ${name}`);
 
 // Перепишіть стрілкову функцію в звичайну const multiplyValues = (a, b, c) => a * b * c;
 

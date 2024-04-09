@@ -73,27 +73,16 @@ const menuData = [
     { name: 'Послуги', url: '/services' },
 ];
 
-menuData
+for (let value of menuData){
+    let myDiv = document.querySelector ('.div');
 
-// let newLinkFirst = document.createElement('a');
-// newLinkFirst.setAttribute('href', menuData[0].url);
-// newLinkFirst.innerText = menuData[0].name;
+    let newLink = document.querySelector ('a');
+    newLink.setAttribute ('href', value.url)
+    newLink.innerText = value.name;
+    myDiv.appendChild (newLink)
+};
 
-// let newLinkSecond = document.createElement('a');
-// newLinkSecond.setAttribute('href', menuData[1].url);
-// newLinkSecond.innerText = menuData[1].name;
-
-// let newLinkThird = document.createElement('a');
-// newLinkThird.setAttribute('href', menuData[2].url);
-// newLinkThird.innerText = menuData[2].name;
-
-containerHeader.appendChild(newLinkFirst);
-containerHeader.appendChild(newLinkSecond);
-containerHeader.appendChild(newLinkThird);
-
-newLinkFirst.style.padding = '50px';
-newLinkSecond.style.padding = '50px';
-newLinkThird.style.padding = '50px';
+newLink.style.padding = '50px';
 
 
 // 4)Створіть блок за допомогою js задайте блоку стиль display flex та в середині цього блоку створіть 50 div блоків з правилом border-radius, width 50px height 50px та background-color
