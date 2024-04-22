@@ -1,0 +1,107 @@
+body{
+    color: #56474F ;
+  }
+  
+  header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FAE9F2;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .logo img{
+    height: 7rem;
+  
+  }
+  
+  .headerContentWrapper{
+    margin-left: 5rem; /* 135px; */
+    margin-right: 5rem; /*146px;*/
+  }
+  
+  ul{
+    display: flex;
+    font-size: 1.5rem;
+    outline: none;
+    
+  }
+  li{
+    list-style: none;
+    margin: 3rem 4rem 1rem 4rem;
+    cursor:  pointer;
+    width: 5rem;
+    outline:  none;
+  }
+  
+  .buttonAddHeader,
+  .headerButtonOrderNow {
+    width: 3%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #56474F;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    /* -webkit-box-shadow: 4px 8px 19px -3px #CEA8BB; */
+    /* box-shadow: 4px 8px 19px -3px #CEA8BB; */
+    transition: all 250ms;
+    overflow: hidden;
+
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1rem;
+    background-color: #56474F;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #ffffff;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+  
+  .buttonAddHeader,
+  .headerButtonOrderNow{
+    display: flex;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerButtonOrderNow{
+    width: 11rem;
+    height: 2.5rem;
+  }
+  
+  .headerRight{
+    display: flex;
+    width: 20rem;
+    padding-top: 1.6rem;
+    margin-left: 10rem;
+  }
+  
+  span{
+    background-color: red;
+    width: 3rem;
+    height: 2rem;
+  }

@@ -1,0 +1,84 @@
+.image-slider {
+    width: 20%;
+    margin-right: 30rem;
+    border-radius: 0.45rem;
+    background-color: #DFE7F6;
+    margin-top: 10rem;
+    height: 28rem;
+  }
+  .image-slider .slick-dots {
+    color: #DFE7F6;
+  }
+  .image-slider img {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2.2rem;
+  }
+
+  .slick-dots {
+    bottom: -19px;
+  }
+  .slick-prev {
+    left: .4rem;
+
+}
+.slick-next {
+  right: 0.4rem;
+}
+  .reviewDivs{
+    display: flex;
+    background-color: #4D5E7C;
+    height: 53rem;
+    margin-top: 19rem;
+  }
+
+  .reviewsSmallDescription{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    color: #4D5E7C;
+    background-color: #A6BADD;
+    height: 3.2rem;
+    border-bottom-left-radius: 0.45rem;
+    padding-top: 0.45rem;
+    border-bottom-right-radius: 0.45rem;
+  }
+
+  .reviewsText{
+    background-color: #DFE7F6;
+    padding: 4rem 8rem;
+    font-size: 1.3rem;
+    border-radius: 0.45rem;
+    text-align: center;
+    width: 40rem;
+    margin: auto;
+    margin-right: 1rem;
+    margin-top: 12rem;
+  }
+
+  .writeReview{
+    background-color: #DFE7F6;
+    font-size: 1.3rem;
+    border-radius: 0.45rem;
+    text-align: center;
+    margin: auto;
+    margin-right: 1rem;
+    padding: 2rem 6rem;
+    position: relative;
+    bottom: 14.5rem;
+    right: 38.5rem;
+    width: 35rem;
+    height: 16rem;
+
+
+  }
+
+  #opinion{
+    width: 26rem;
+    height: 8rem;
+    margin: 1.5rem -2rem;  }
+
+
+input, button, select, optgroup, textarea {
+  margin: auto;
+}
