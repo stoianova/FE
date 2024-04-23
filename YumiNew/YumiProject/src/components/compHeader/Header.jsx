@@ -18,27 +18,27 @@ const Header = ({size, setShow}) => {
 
                 <div className="headerContentWrapper container d-flex justify-content-around ">
 
-                    <span className="logo" onClick={()=>setShow(true)}>
+                    <div className="logo" onClick={()=>setShow(true)}>
                         <img src={logo} alt="logo" />
-                    </span>
+                    </div>
 
                     <HInfo/>
 
                     <div className="headerRight">
 
-                        <div className="buttonAddHeader" onClick={()=>setShow(false)}>
+                        <button className="buttonAddHeader" onClick={()=>setShow(false)}>
 
-                            <span>
+                            <div>
                                 {/* <div className="buttonAddHeader"> */}
                                     {buttonAddHeader}
                                 {/* </div>                            */}
-                            </span>
+                            </div>
                             <span>{size}</span>
 
-                        </div>
+                        </button>
 
-                        <button className='headerButtonOrderNow' type="button">Order now</button>
-                                
+{/*                         <button className='headerButtonOrderNow'>Order now</button>
+ */}                                
                         </div>
                         
 

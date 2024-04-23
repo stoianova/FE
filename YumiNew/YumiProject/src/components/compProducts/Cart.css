@@ -1,32 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 article{
-    width: 60%;
+    width: 50%;
     margin: auto;
+    border: 1px solid #C3D3F0;
+    background-color: #ffffff;
+    position: absolute;
+    left: 25%;
+    z-index: 3; 
+    margin-bottom: 20rem;
 }
-.cartBox img{
-    width: 50px;
-    height: 80px;
-}
-.cartImage{
+.cartObject{
+    border-radius: 8px;
+    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
+    background: rgb(254, 254, 255);
     display: flex;
-    width: 400px;
+    width: 50%;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 1rem;
+}
+.infoCartleft{
+    width: 60%;
+}
+.infoCartRight{
+    width: 40%;
+}
+.cartItemName{
+    width: 60%;
+}
+.cartObject img{
+    width: 60%;
 }
 .cartBox{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    border-bottom: 2px solid #f39898;
     padding-bottom: 5px;
+    color: #4D5E7C;
 }
-.cartBox div:nth-child(2) button{
-    padding: 5px 10px;
+.cartItemPrice{
     font-weight: bold;
-    margin-right: 5px;
 }
-.cartBox div:nth-child(3) button{
-    padding: 5px 10px;
+.cartItemAmount{
+    font-weight: lighter;
+    margin: .5rem 0rem;
+}
+
+.buttonsCart{
+    width: 8rem;
+    height: 7rem;
+    margin-right: 10rem;
+    /* margin-top: 2rem; */
+    align-content: center;
+    color: #4D5E7C;
+}
+.btnAmount{
+    border: none;
+    background-color: transparent;
+    margin: 0rem 1rem;
+    color: #4D5E7C;
+}
+.btnIncrease,
+.btnDecrease,
+.btnRemove,
+.btnClose{
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
+    background-color: rgb(254, 254, 255);
+    color: #4D5E7C;
+}
+.btnRemove{
+    margin-top: 1rem;
+}
+.btnIncrease:hover,
+.btnDecrease:hover,
+.btnClose:hover{
+    background-color: #C3D3F0;
+}
+
+.btnRemove:hover{
+    background-color: #CEA8BB;
+    color: #fff;
+}
+
+.totalDiv{
+    color: #4D5E7C;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.totalDiv:nth-child(1){
+    color: #CEA8BB;
+}
+.cashDiv{
+    color: #4D5E7C;
+    font-weight: lighter;
+    margin-left: 2rem;
+}
+.btnClose{
+    margin: 1rem 2rem;
+}
+.btnNext{
+    margin: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
+    background-color: rgb(254, 254, 255);
+    color: #4D5E7C;
+}
+.btnNext{
+    margin: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
+    background-color: rgb(254, 254, 255);
+    color: #4D5E7C;
+}
+.btnNext:hover{
+    background-color: #C3D3F0;
+    font-size: larger;
+    box-shadow: 0px 0px 10px 10px rgb(195, 211, 240);
+
 }

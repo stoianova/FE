@@ -6,11 +6,11 @@ import ProductsSection from './components/compProducts/ProductsSection'
 import Footer from './components/compFooter/Footer';
 import Card from './components/compProducts/Card';
 import Cart from './components/compProducts/Cart';
+import OrderTypeForm from './components/compProducts/OrderTypeForm';
 
 
 
 
-// function App({size}) {
 
 const App = () => {
 
@@ -56,8 +56,12 @@ const App = () => {
       <Header size={cart.length} setShow={setShow}/>
 
       {
-        show ? <ProductsSection handleClick={handleClick}/> : <Cart cart={cart} setCart={setCart} handleChange={handleChange}/>
+        show ? <ProductsSection handleClick={handleClick} /* setShow={setShow} *//> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
       }
+
+      {/* {
+        show ? <Cart setShow={setShow} /> : <OrderTypeForm /> 
+      } */}
       
       {/* <Body /> */}
 

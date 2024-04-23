@@ -15,21 +15,23 @@ import Image13 from './fixedMenu/image13-removebg-preview.png'
 import Image14 from './fixedMenu/image14-removebg-preview.png'
 import Image15 from './fixedMenu/image15-removebg-preview.png'
 
-// const apiUrl = 'https://api.github.com/users/hadley/orgs'
-// function pullJson() {
-//     fetch(apiUrl)
-//     .then(response => response.json())
-//     .then(responseData => {
-//         return responseData
-//     })
-// }
+/* 
+const apiUrl = 'https://api.github.com/users/hadley/orgs'
+function pullJson() {
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(responseData => {
+        return responseData
+    })
+}
 
-// let newObj = responseData;
-// console.log(newObj);
+let newObj = responseData;
+console.log(newObj);
 
-// useEffect(() => {
-//     pullJson()
-// },[])
+useEffect(() => {
+    pullJson()
+},[]) */
+
 
         const listProducts = [
         {

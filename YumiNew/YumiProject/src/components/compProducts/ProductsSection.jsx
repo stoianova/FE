@@ -47,11 +47,7 @@ const ProductsSection = ({handleClick}) => {
             CREAMY MILK TEA MADE WITH CAKE FLAVOURED CREME.
             </div>
 
-            <div className="product container">
-
-                {/* {listProducts.map(createCard)} */}
-
-            </div>
+            <div className="product container"></div>
 
 
 
