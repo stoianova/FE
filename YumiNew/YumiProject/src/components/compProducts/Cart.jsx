@@ -31,20 +31,25 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
     useEffect(() => {
         handlePrice();
     })
-    console.log(cart);
+    // console.log(cart);
     return (
-        <>
         <article>
+           
             {
-                cart?.map((item)=>(
+            cart?.map((item)=>(
+
+                <div className="leftSideCart">
+
                     <div className="cartBox" key={item.id}>
+
                         <div className="cartObject">
+
                             <div className="infoCartleft">
                                 <p className='cartItemName'>{item.name}</p>
                                 <div className="cartItemAmount">x1</div>                                
                                 <div className='cartItemPrice'>${item.price}</div>
-
                             </div>
+
                             <div className="infoCartRight">
                                 <img src={item.image}/> <br />
                             </div>
@@ -54,31 +59,41 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
                             <button className='btnAmount'>{item.amount}</button>
                             <button className='btnDecrease' onClick={()=>handleChange(item, -1)}> - </button>
                             <button className='btnRemove' onClick={() => handleRemove(item.id)}>Delete</button>
+                        </div>
 
                         </div>
-                        </div>
-                        </div>
-                ))}
+                    </div>
 
-            <div className="bottomPart">
-                <div className='totalDiv'>Total price ${price} </div> <br />
-                <div className="cashDiv">
-                    We accept cash payment only
-                </div>                
-            </div>
+                    {/* <div className="bottomPart">
+                        <div className='totalDiv'>Total price ${price} </div> <br />
+                        <div className="cashDiv">We accept cash payment only</div>                
+                    </div> */}
 
-            <div className='inputSide'>
-                <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
-                {
-                    form ? <ButtonNext setForm={setForm} /> : <OrderTypeForm setForm={setForm}/>
-                }
-            </div>
+                </div>
+            ))}
 
 
+            
+                <div className="rightSideCart">
+
+                    {/* <div className="bottomPart">
+                        <div className='totalDiv'>Total price ${price} </div> <br />
+                        <div className="cashDiv">We accept cash payment only</div>                
+                    </div> */}
+
+                    <div className='inputSide'>
+                        <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
+                        {
+                        form ? <ButtonNext setForm={setForm} /> : <OrderTypeForm setForm={setForm}/>
+                        }
+                    </div>
+                    
+                </div>
+                    <div className="bottomPart">
+                        <div className='totalDiv'>Total price ${price} </div> <br />
+                        <div className="cashDiv">We accept cash payment only</div>                
+                    </div>
         </article>
-
-
-        </>
     );
 }
 

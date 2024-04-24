@@ -21,7 +21,7 @@ function DeliveryForm(/* {setAway} */) {
 
                 <input type="submit" id="submitButton" value="Send" disabled /> <br />
 
-                <div className="btnBack" onClick={() => setForm(true)} >Back</div>
+                <div className="btnBack" /* onClick={() => setForm(true)} */ >Back</div>
                 </div>
             </form>
             

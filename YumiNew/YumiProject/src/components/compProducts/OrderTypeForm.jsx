@@ -3,8 +3,8 @@ import './Cart.css'
 import DeliveryForm from './DeliveryForm';
 
 function OrderTypeForm({setForm}) {
-/*     const [away, setAway] = useState(true);
- */
+    // const [away, setAway] = useState(true);
+
     return (
         <>
             <div className='deliveryType'>
