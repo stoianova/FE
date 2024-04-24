@@ -1,23 +1,27 @@
 article{
-    width: 50%;
+    width: 60%;
     margin: auto;
     border: 1px solid #C3D3F0;
     background-color: #ffffff;
-    position: absolute;
+    /* position: absolute;
     left: 25%;
-    z-index: 3; 
+    z-index: 3;  */
+    padding-top: 5rem;
     margin-bottom: 20rem;
     display: flex;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 5% 25% 25% 5%; */
 }
 .cartObject{
     border-radius: 8px;
     box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
     background: rgb(254, 254, 255);
     display: flex;
-    width: 50%;
-    justify-content: space-between;
-    margin: 2rem;
+    margin: 2rem 2rem 0rem 2rem;
     padding: 1rem;
+    width: 90%;
+    height: 11rem;
 }
 .infoCartleft{
     width: 60%;
@@ -29,14 +33,12 @@ article{
     width: 60%;
 }
 .cartObject img{
-    width: 60%;
+    width: 90%;
 }
 .cartBox{
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-bottom: 5px;
     color: #4D5E7C;
 }
 .cartItemPrice{
@@ -48,10 +50,11 @@ article{
 }
 
 .buttonsCart{
-    width: 8rem;
-    height: 7rem;
-    margin-right: 10rem;
-    /* margin-top: 2rem; */
+    display: flex;
+    width: 5rem;
+    height: 9rem;
+    flex-direction: column;
+    padding: .7rem 0rem;
     align-content: center;
     color: #4D5E7C;
 }
@@ -60,6 +63,8 @@ article{
     background-color: transparent;
     margin: 0rem 1rem;
     color: #4D5E7C;
+    width: 2rem;
+    margin-left: 2rem;
 }
 .btnIncrease,
 .btnDecrease,
@@ -71,27 +76,38 @@ article{
     background-color: rgb(254, 254, 255);
     color: #4D5E7C;
 }
+.btnDecrease{
+    width: 2rem;
+    margin-left: 2rem;
+}
+.btnIncrease{
+    width: 2rem;
+    justify-content: center;
+    align-content: center;
+    margin-left: 2rem;
+}
 .btnRemove{
     margin-top: 1rem;
+    width: 5rem;
 }
 .btnIncrease:hover,
 .btnDecrease:hover,
 .btnClose:hover{
-    background-color: #C3D3F0;
+    background-color: #4D5E7C;
+    color: #fff;
 }
 
 .btnRemove:hover{
-    background-color: #CEA8BB;
+    background-color: #4D5E7C;
     color: #fff;
 }
 
 .totalDiv{
     color: #4D5E7C;
     font-weight: bold;
-    margin-left: 2rem;
-}
-.totalDiv:nth-child(1){
-    color: #CEA8BB;
+    margin: 2rem 0rem 1rem 2rem;
+    background-color: #e6eefb;
+    width: 8rem;
 }
 .cashDiv{
     color: #4D5E7C;
@@ -100,14 +116,8 @@ article{
 }
 .btnClose{
     margin: 1rem 2rem;
-}
-.btnNext{
-    margin: 1rem;
-    border: none;
-    border-radius: 0.2rem;
-    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
-    background-color: rgb(254, 254, 255);
-    color: #4D5E7C;
+    width: 2rem;
+
 }
 .btnNext{
     margin: 1rem;
@@ -123,3 +133,24 @@ article{
     box-shadow: 0px 0px 10px 10px rgb(195, 211, 240);
 
 }
+.bottomPart{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
