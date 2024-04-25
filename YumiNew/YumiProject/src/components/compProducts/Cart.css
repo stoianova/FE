@@ -1,5 +1,6 @@
 article{
     width: 60%;
+    height: 30rem;
     margin: auto;
     background-color: #ffffff;
     padding-top: 5rem;
@@ -7,27 +8,36 @@ article{
     display: flex;
     /* flex-direction: column; */
 }
+.leftSideCart{
+    height: 30rem;
+    overflow: scroll;
+}
+.leftInnerScroll{
+    height: 23rem;
+    overflow: scroll;
+}
 .cartObject{
     border-radius: 8px;
     box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
     background: rgb(254, 254, 255);
     display: flex;
     padding: 1rem;
-    height: 11rem;
-    margin: 2rem 2rem 2rem 2rem;
+    height: 9.5rem;
+    margin: 2rem 2rem -1rem 2rem;
     width: 86%;
 }
 .infoCartleft{
     width: 50%;
 }
 .infoCartRight{
-    width: 50%;
+    width: 35%;
 }
 .cartItemName{
     width: 100%;
 }
 .cartObject img{
-    height: 100%;}
+    height: 90%;
+}
 .cartBox{
     width: 100%;
     display: flex;
@@ -41,22 +51,23 @@ article{
     font-weight: lighter;
     margin: .5rem 0rem;
 }
-
-.buttonsCart{
+.btnCount{
     display: flex;
-    width: 5rem;
-    height: 9rem;
-    flex-direction: column;
+    justify-content: center;
+}
+.buttonsCart{
+    width: 6rem;
+    height: 6rem;
+    align-self: center;
     padding: .7rem 0rem;
     color: #4D5E7C;
 }
 .btnAmount{
     border: none;
     background-color: transparent;
-    margin: 0rem 1rem;
+    /* margin: 0rem 1rem; */
     color: #4D5E7C;
     width: 2rem;
-    margin-left: 1.5rem;
 
 }
 .btnIncrease,
@@ -70,18 +81,24 @@ article{
     color: #4D5E7C;
 }
 .btnDecrease{
-    width: 2rem;
-    margin-left: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-weight: bolder;
+    /* margin-left: 1.5rem; */
 }
 .btnIncrease{
-    width: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     justify-content: center;
     align-content: center;
-    margin-left: 1.5rem;
+    font-weight: bolder;
+    /* margin-left: 1.5rem; */
 }
 .btnRemove{
     margin-top: 1rem;
-    width: 5rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: 1.85rem;
 }
 .btnIncrease:hover,
 .btnDecrease:hover,
@@ -100,7 +117,7 @@ article{
     font-weight: bold;
     background-color: #e6eefb;
     width: 8rem;
-    margin: 0rem 0rem 1rem 2rem;
+    margin: 1rem 0rem 1rem 2rem;
 
 }
 .cashDiv{
@@ -108,7 +125,7 @@ article{
     font-weight: lighter;
     margin-left: 2rem;
     font-style: italic;
-
+    margin-bottom: 2rem;
 }
 .btnClose{
     margin: 1rem 2rem;
@@ -143,7 +160,7 @@ article{
     border-bottom-right-radius: .8rem;
     box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
     background-color: rgb(254, 254, 255);
-
+height: 30rem;
 
     display: flex;
     justify-content: center;

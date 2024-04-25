@@ -35,11 +35,11 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
     return (
         <article>
            
+
+                <div className="leftSideCart"> 
+                    <div className='leftInnerScroll'>
             {
             cart?.map((item)=>(
-
-                <div className="leftSideCart">
-
                     <div className="cartBox" key={item.id}>
 
                         <div className="cartObject">
@@ -55,25 +55,29 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
                             </div>
 
                         <div className='buttonsCart'>
-                            <button className='btnIncrease' onClick={()=>handleChange(item, +1)}> + </button>
-                            <button className='btnAmount'>{item.amount}</button>
-                            <button className='btnDecrease' onClick={()=>handleChange(item, -1)}> - </button>
-                            <button className='btnRemove' onClick={() => handleRemove(item.id)}>Delete</button>
+
+                            <div className="btnCount">
+                                <button className='btnDecrease' onClick={()=>handleChange(item, -1)}> - </button>
+                                <button className='btnAmount'>{item.amount}</button>
+                                <button className='btnIncrease' onClick={()=>handleChange(item, +1)}> + </button>
+                            </div>
+
+                            <button className='btnRemove' onClick={() => handleRemove(item.id)}>{closeMark}</button>
                         </div>
 
                         </div>
                     </div>
-
-                    {/* <div className="bottomPart">
+            ))}     </div>
+                    <div className="bottomPart">
                         <div className='totalDiv'>Total price ${price} </div> <br />
                         <div className="cashDiv">We accept cash payment only</div>                
-                    </div> */}
+                    </div>
 
                 </div>
-            ))}
 
 
-            
+
+
                 <div className="rightSideCart">
 
                     {/* <div className="bottomPart">
@@ -89,10 +93,10 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
                     </div>
                     
                 </div>
-                    <div className="bottomPart">
+                    {/* <div className="bottomPart">
                         <div className='totalDiv'>Total price ${price} </div> <br />
                         <div className="cashDiv">We accept cash payment only</div>                
-                    </div>
+                    </div> */}
         </article>
     );
 }
