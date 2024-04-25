@@ -25,13 +25,12 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
     const handleRemove = (id) => {
         const arr = cart.filter((item) => item.id !== id);
         setCart(arr);
-        // handlePrice();
     }
 
     useEffect(() => {
         handlePrice();
     })
-    // console.log(cart);
+    
     return (
         <article>
            
@@ -80,11 +79,6 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
 
                 <div className="rightSideCart">
 
-                    {/* <div className="bottomPart">
-                        <div className='totalDiv'>Total price ${price} </div> <br />
-                        <div className="cashDiv">We accept cash payment only</div>                
-                    </div> */}
-
                     <div className='inputSide'>
                         <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
                         {
@@ -93,10 +87,7 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
                     </div>
                     
                 </div>
-                    {/* <div className="bottomPart">
-                        <div className='totalDiv'>Total price ${price} </div> <br />
-                        <div className="cashDiv">We accept cash payment only</div>                
-                    </div> */}
+
         </article>
     );
 }
