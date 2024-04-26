@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .formDiv{
+            display: flex;
+            width: 15rem;
+            margin: 2rem auto;
+        }
+        label, input{
+            margin: 0.5rem auto;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="formDiv">
+
+    <form action="products/add">
+
+        <label for="id">id</label>
+        <input type="number" name="" id="id"> <br>
+        
+        <label for="name">name</label>
+        <input type="text" name="" id="name"> <br>
+
+        <label for="localname">localname</label>
+        <input type="text" name="" id="localname"> <br>
+
+        <label for="price">price</label>
+        <input type="text" name="" id="price"> <br>
+
+        <label for="image">image</label>
+        <input type="image" name="" id="image">  <br><!-- поле для картинки. На странице вижу отображается не так, как мне обычно надо, но я не знаю как нужно тебе. Если этот формат не подходит, разблокируй следующий ниже, а этот удали -->
+
+        <!-- <label for="">image</label>
+        <input type="text" name="" id="image">  <br> -->
+
+        <label for="amount">amount</label>
+        <input type="number" name="" id="amount"> <br>
+
+        <button id="submit" type="submit">submit</button>
+
+    </form>
+
+</div>
+
+
+</body>
+</html>
