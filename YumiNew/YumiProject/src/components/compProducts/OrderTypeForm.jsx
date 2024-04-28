@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
 import './Cart.css'
 import './OrderTypeForm.css';
-// import DeliveryForm from './DeliveryForm';
-// import TakeAwayForm from './TakeAwayForm';
-// import App from '../../App';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faGlassWater, faCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const OrderTypeForm = ({setDelivery, setAway, setShow}) => {
+const OrderTypeForm = ({setDelivery, setAway/* , setShow */}) => {
 
     const closeMark = <FontAwesomeIcon icon={faXmark} />
     const glassIcon = <FontAwesomeIcon icon={faGlassWater} style={{color: "#99afd6",}} />
@@ -18,7 +15,7 @@ const OrderTypeForm = ({setDelivery, setAway, setShow}) => {
     return (
         <>
             <div className='deliveryType'>
-            <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
+            <button className='btnClose' /* onClick={() => setShow(true)} */> {closeMark} </button>
 
                 <div className="innerRighrSide">
                 <p>Choose your delivery type</p>

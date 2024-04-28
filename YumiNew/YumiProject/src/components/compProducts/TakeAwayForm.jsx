@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import './TakeAwayForm.css'
 import './DeliveryForm.css';
 import {validName, validNumber} from './RegEx';
-/* import Cart from './Cart';
- */
-function TakeAwayForm({setAway/* , cart */}) {
+import Cart from './Cart';
+
+
+function TakeAwayForm({setAway, cart}) {
 
     function firstFun(){
         let name = document.querySelector ('#name');
@@ -21,17 +22,23 @@ function TakeAwayForm({setAway/* , cart */}) {
             e.preventDefault()
             let name = document.querySelector ('#name');
             let number = document.querySelector ('#number');
+            let time = document.querySelector ('#time');
+            let comments = document.querySelector ('#comments');
 
             let newObj = {
                 nameNew: '',
-                numberNew: ''
+                numberNew: '',
+                timeNew: '',
+                commentsNew: ''
             }
             newObj.nameNew = name.value
             newObj.numberNew = number.value
+            newObj.timeNew = time.value
+            newObj.commentsNew = comments.value
 
-/*             let newArr = cart.push(newObj)
-            console.log(newArr);
- */
+            // let newArr = [cart.push(newObj)]
+            // console.log(newArr); 
+
             localStorage.setItem('.order', JSON.stringify(newObj));
 
             setTimeout(function another(){
@@ -41,6 +48,24 @@ function TakeAwayForm({setAway/* , cart */}) {
                 }
             }, 0)
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            // let prodName = document.querySelector ('.cartItemName');
+            // let prodAmount = document.querySelector ('.cartItemAmount');
+            // let prodPrice = document.querySelector ('.cartItemPrice');
+
+            // let newProd = {
+            //     newprodName: '',
+            //     newprodAmount: '',
+            //     newprodPrice: ''
+            // }
+            // newProd.newprodName = prodName.value
+            // newProd.newprodAmount = prodAmount.value
+            // newProd.newprodPrice = prodPrice.value
+
+            // localStorage.setItem('.orderProducts', JSON.stringify(newProd));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
     return (
         <>

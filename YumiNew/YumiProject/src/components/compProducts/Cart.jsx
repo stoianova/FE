@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-// import App from '../../App';
 import './Cart.css'
 import './OrderTypeForm.css'
 import OrderTypeForm from './OrderTypeForm';
@@ -8,15 +7,15 @@ import { faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import DeliveryForm from './DeliveryForm';
 import TakeAwayForm from './TakeAwayForm';
 
-let cart = [];
+// let cart = [];
 
-const Cart = ({cart, setCart,/*  setShow, */ handleChange}) => {
+const Cart = ({cart, setCart, /* setShow, */ handleChange}) => {
 
     const [price, setPrice] = useState(0);
     const [delivery, setDelivery] = useState(true);
     const [away, setAway] = useState(true);
 
-    const closeMark = <FontAwesomeIcon icon={faXmark} />
+    const closeMark = <FontAwesomeIcon icon={faXmark}/*  setShow={setShow} *//>
 
 
     const handlePrice = () => {
@@ -38,7 +37,7 @@ const Cart = ({cart, setCart,/*  setShow, */ handleChange}) => {
 
     function myfun (){
         if (delivery === true && away === true){ 
-        return <OrderTypeForm setDelivery={setDelivery} setAway={setAway} /* setShow={setShow} *//>
+        return <OrderTypeForm setDelivery={setDelivery} setAway={setAway}/>
         }
         else if (delivery === true && away !== true){ 
         return <TakeAwayForm setAway={setAway}/>
@@ -99,7 +98,7 @@ const Cart = ({cart, setCart,/*  setShow, */ handleChange}) => {
     );
 
 }
+// console.log(cart)
 
 export default Cart;
 
-console.log(cart)
