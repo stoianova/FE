@@ -10,9 +10,9 @@ function SProductCardThird(props) {
             </div>
 
             <div className="productTextThird">
-                For CHEESY lovers <br />
-                Lychee / Dragon Fruit / Mozzarella foam <br />
-                $ 7
+                <p>For CHEESY lovers</p>
+                <p>Lychee / Dragon Fruit / Mozzarella foam </p>
+                <p>$ 7</p>
             </div>
             
         </div>

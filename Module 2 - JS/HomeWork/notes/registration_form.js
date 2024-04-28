@@ -120,9 +120,3 @@
 //             emailCheckBtn.disabled=true
 //         }
 //        })
-
-
-
-
-
-}

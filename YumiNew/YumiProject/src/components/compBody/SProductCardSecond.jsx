@@ -9,9 +9,9 @@ function SProductCardSecond(props) {
                 <img src={SecondProduct} alt="" />
             </div>
             <div className="productTextSecond">
-                Special release for specials <br />
-                Milk collection <br />
-                $ 5
+                <p>Special release for specials </p>
+                <p>Milk collection </p>
+                <p>$ 5</p>
             </div>
             
         </div>

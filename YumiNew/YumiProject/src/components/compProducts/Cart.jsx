@@ -1,15 +1,20 @@
 import React, {useEffect, useState} from 'react';
+// import App from '../../App';
 import './Cart.css'
 import './OrderTypeForm.css'
-import ButtonNext from './ButtonNext';
 import OrderTypeForm from './OrderTypeForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import DeliveryForm from './DeliveryForm';
+import TakeAwayForm from './TakeAwayForm';
 
-const Cart = ({cart, setCart, handleChange, setShow}) => {
+let cart = [];
+
+const Cart = ({cart, setCart,/*  setShow, */ handleChange}) => {
 
     const [price, setPrice] = useState(0);
-    const [form, setForm] = useState(true);
+    const [delivery, setDelivery] = useState(true);
+    const [away, setAway] = useState(true);
 
     const closeMark = <FontAwesomeIcon icon={faXmark} />
 
@@ -30,7 +35,19 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
     useEffect(() => {
         handlePrice();
     })
-    
+
+    function myfun (){
+        if (delivery === true && away === true){ 
+        return <OrderTypeForm setDelivery={setDelivery} setAway={setAway} /* setShow={setShow} *//>
+        }
+        else if (delivery === true && away !== true){ 
+        return <TakeAwayForm setAway={setAway}/>
+        }
+        else if (delivery !== true && away === true){ 
+        return <DeliveryForm setDelivery={setDelivery}/>
+        }
+    }
+
     return (
         <article>
            
@@ -73,23 +90,16 @@ const Cart = ({cart, setCart, handleChange, setShow}) => {
                     </div>
 
                 </div>
-
-
-
-
-                <div className="rightSideCart">
-
-                    <div className='inputSide'>
-                        <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
-                        {
-                        form ? <ButtonNext setForm={setForm} /> : <OrderTypeForm setForm={setForm}/>
-                        }
-                    </div>
-                    
-                </div>
+            
+            {
+                myfun()
+            }
 
         </article>
     );
+
 }
 
 export default Cart;
+
+console.log(cart)

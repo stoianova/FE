@@ -14,8 +14,6 @@ function HButtons() {
                     {buttonAddHeader}
                 </button>
                 <span></span>
-
-                <button className='headerButtonOrderNow' type="button">Order now</button>
                         
             </div>
     );

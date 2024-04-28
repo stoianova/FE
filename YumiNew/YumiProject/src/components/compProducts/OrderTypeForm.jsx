@@ -1,23 +1,37 @@
 import React, {useState} from 'react';
 import './Cart.css'
-import DeliveryForm from './DeliveryForm';
+import './OrderTypeForm.css';
+// import DeliveryForm from './DeliveryForm';
+// import TakeAwayForm from './TakeAwayForm';
+// import App from '../../App';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark, faGlassWater, faCircle } from '@fortawesome/free-solid-svg-icons'
 
-function OrderTypeForm({setForm}) {
-    // const [away, setAway] = useState(true);
+
+
+const OrderTypeForm = ({setDelivery, setAway, setShow}) => {
+
+    const closeMark = <FontAwesomeIcon icon={faXmark} />
+    const glassIcon = <FontAwesomeIcon icon={faGlassWater} style={{color: "#99afd6",}} />
+    const bubblesIcon = <FontAwesomeIcon icon={faCircle} bounce style={{color: "#a4b6d6",}} />
 
     return (
         <>
             <div className='deliveryType'>
+            <button className='btnClose' onClick={() => setShow(true)}> {closeMark} </button>
+
+                <div className="innerRighrSide">
                 <p>Choose your delivery type</p>
-                <button >Take away from Yumi Cafe</button>
-                <button /* onClick={() => setAway(true)} */>Delivery with Yumi courier</button>
+                <button onClick={() => setAway(false)}>Take away from Yumi Cafe</button>
+                <button onClick={() => setDelivery(false)} >Delivery with Yumi courier</button>
+                </div>
+            </div>
+
+            <div className='bubbleIcon'>
+                {bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}
+                {glassIcon}
             </div>
             
-            <div className="btnBack" onClick={() => setForm(true)} >Back</div>
- 
-            {/* {
-                away ? <OrderTypeForm  setAway={setAway}/> : <DeliveryForm setAway={setAway}/>
-            } */}
         </>
     );
 }

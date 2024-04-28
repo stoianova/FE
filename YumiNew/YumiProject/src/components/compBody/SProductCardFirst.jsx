@@ -12,9 +12,9 @@ function SProductCardFirst() {
                     <img src={FirstProduct} alt="" />
                 </div>
             <div className="productTextFirst">
-                Try our bestsellers! <br />
-                Strawberry / Oreo / Creme <br />
-                $ 6.5
+                <p>Try our bestsellers! </p>
+                <p>Strawberry / Oreo /Creme </p> 
+                <p>$ 6.5</p>
             </div>
                 
             </div>

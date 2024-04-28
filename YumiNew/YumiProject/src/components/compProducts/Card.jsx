@@ -1,6 +1,6 @@
 import React from 'react';
 // import Products from '../compProducts/Products.jsx';
-import './Card.css';
+// import './Card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 

@@ -9,9 +9,9 @@ function SProductCardForth() {
                 <img src={ForthProduct} alt="" />
             </div>
             <div className="productTextForth">
-                Yumi Fresh selection 2024 <br />
-                Cold drinks <br />
-                $ 5
+               <p> Yumi Fresh selection 2024 </p> 
+               <p> Cold drinks </p>
+               <p>$ 5</p> 
             </div>
 
 

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ImageSlider.css';
-import './OpinionSubmit.css';
+// import './OpinionSubmit.css';
 import ClientPic1 from '../../img/clientsPics/rev4.png';
 import ClientPic2 from '../../img/clientsPics/rev6.png';
 import ClientPic3 from '../../img/clientsPics/rev2.png';
@@ -35,9 +35,9 @@ const ImageSlider = ({images}) => {
 
     return (
         <div className='reviewDivs'>
-            <div className="reviewsText">
+            {/* <div className="reviewsText">
                 Share the pictures of your Bubble Tea and get the dicrount for the next order 15%
-            </div>
+            </div> */}
 
             <div className='image-slider'>
                 
@@ -49,7 +49,7 @@ const ImageSlider = ({images}) => {
                     ))}
                 </Slider>
 
-                <div className="reviewsSmallDescription">
+                {/* <div className="reviewsSmallDescription">
                     Photos from out guests
                 </div>
 
@@ -57,27 +57,12 @@ const ImageSlider = ({images}) => {
                 You may write yout opinion here
                 <input type="text" name="opinion" id="opinion" />
                 <button className='opinionSubmit' type="submit">Submit</button>
-                </div>
+                </div> */}
 
             </div>
         </div>
     )
 }
 
-// function SecondSlider() {
-//     let images = [
-//         ClientPic1,
-//         ClientPic2,
-//         ClientPic3
-//     ];
-
-//     return (
-//         <div className="SecondSlider">
-//             <div style={{padding:'10px'}}>
-//                 <ImageSlider images={images} />
-//             </div>
-//         </div>
-//     )
-// }
 
 export default ImageSlider;

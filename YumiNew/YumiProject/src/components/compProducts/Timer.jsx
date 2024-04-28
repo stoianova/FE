@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Cards(props) {
+function Timer(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Cards(props) {
     );
 }
 
-export default Cards;
+export default Timer;

@@ -11,12 +11,31 @@ function DeliveryForm({setDelivery}) {
         let build = document.querySelector ('#build');
         let apart = document.querySelector ('#apart');
 
+        // let myAlert = document.querySelector("#alert");
+
         if(validNumber.test(number.value) && validName.test(name.value) && validStreet.test(street.value) && validBuildNum.test(build.value) && validApart.test(apart.value)){
             submitButton.removeAttribute('disabled')
         }
+        // else if(validName.test(name)){
+        //     myAlert.innerHTML = '<p>Your name is invalid</p>';
+        // }
+        // else if(validNumber.test(number)){
+        //     myAlert.innerHTML = '<p>Your number should starts from 0*********</p>';
+        // }        
+        // else if(validStreet.test(street)){
+        //     myAlert.innerHTML = '<p>Your street should contain letters only</p>';
+        // }        
+        // else if(validBuildNum.test(build)){
+        //     myAlert.innerHTML = '<p>Your building number should contain digits only</p>';
+        // }
+        // else if(validApart.test(apart)){
+        //     myAlert.innerHTML = '<p>Your apartment should contain digits only</p>';
+        // }
         else{
             submitButton.setAttribute('disabled', true)
-        }   }
+            // myAlert.innerHTML = '<p>Your name is invalid</p>';
+        }   
+    }
 
 
         function secondFun(e){
@@ -49,9 +68,9 @@ function DeliveryForm({setDelivery}) {
                 for( let some of inputs){
                     some.value = ''
                 }
-            }, 0)
-    }
+            }, 0)   }
 
+    
     return (
         <>
         <div className="takeAwayForm">
@@ -81,6 +100,7 @@ function DeliveryForm({setDelivery}) {
                 <label htmlFor="comments">Comments:</label>
                 <input type="text" name="comments" id="comments"/> 
                 
+                {/* <div id="alert"></div>                 */}
                 </div>
             </div>
 
@@ -92,7 +112,7 @@ function DeliveryForm({setDelivery}) {
                 </div>
 
             </form>
-            <div id="alert"></div>
+
             </div>
         </>
     );

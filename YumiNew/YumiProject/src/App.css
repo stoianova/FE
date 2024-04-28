@@ -2,7 +2,7 @@ body{
   color: #56474F ;
 }
 
-.warning{
+/* .warning{
   height: 40px;
   width: 250px;
   background-color: coral;
@@ -12,7 +12,7 @@ body{
   position: absolute;
   right: 0;
   top: 10%;
-}
+} */
 
 
 /* BODY */
@@ -22,14 +22,17 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 40rem;
-  height: 24rem;
+  width: 45rem;
+  height: 20rem;
   background-color: #DFE7F6;
   border-radius: 0.45rem;
-  margin-top: 10rem;
-  margin-left: 17rem;
+  margin-top: 6rem;
+  margin-left: 8rem;
   display: grid;
   grid-area: 1 / 6 ;
+  border-radius: .8rem;
+  box-shadow: 0px 0px 10px 10px #DFE7F6;
+  background-color: #f2f5fb;
   
 }
 .welcome{
@@ -41,19 +44,19 @@ body{
   width: 33rem;
   font-size: 2.5rem;
   border-radius: 0.45rem;
-
+  height: 4rem;
 }
 .welcomeText{
   display: flex;
   justify-content: right;
-  padding: 2.4rem 8rem;
+  padding: 2.4rem 5rem;
   font-size: 1.2rem;
   text-align: center;
 }
 
 .backImg{
-  margin-top: 6rem;
-  width: 54rem;
+  margin-top: 3rem;
+  width: 45rem;
   border-radius: 0.45rem;
 }
 
@@ -72,8 +75,9 @@ body{
   background-color: #ffffff;
   border-radius: 0.45rem;
   display: grid;
-  grid-area: 4/8;
+  grid-area: 3/7;
   margin-right: 50rem;
+  margin-top: 5rem;
 }
 
 
@@ -93,22 +97,24 @@ body{
 
 
 .productCartFirst{
+  
   background-color: #FAE9F2;
   width: 35rem;
   height: 45rem;
-  grid-area: 11/10/10/3;
+  grid-area: 11/10/9/3;
   margin-top: 8rem;
   border-radius: 0.45rem;
-
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardSecond{
   width: 35rem;
   height: 45rem;
   background-color: #FAE9F2;
-  grid-area: 9/7/6/9;
+  grid-area: 9/7/5/9;
   margin-top: 5rem;
   border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardThird{
@@ -116,27 +122,55 @@ body{
   height: 41rem;
   background-color: #FAE9F2;
   margin-top: 4rem;
-  grid-area: 10/8;
+  grid-area: 9/8;
   margin-left: 3rem;
   border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardForth{
   width: 28rem;
   height: 38rem;
   background-color: #FAE9F2;
-  grid-area: 7/2;
+  grid-area: 6/2;
   border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
+.productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 1.35rem;
+  letter-spacing: .3rem;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.15rem;
+
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #c0b1b9;
+}
+
+/* 
 .reviewsDiv{
   width: 30rem;
   height: 30rem;
-  background-color: #DFE7F6;
-  grid-area: 11/12/12/4;
-  margin-top: 50rem;
+  background-color: #DFE7F6; */
+  /* grid-area: 11/12/12/4; */
+  /* margin-top: 10rem;
   border-radius: 0.45rem;
-}
+} */
 
 
 
@@ -158,6 +192,15 @@ body{
 .productTextSecond,
 .productTextThird,
 .productTextForth{
-  margin: 5%;
+  margin: .5rem 2rem;
 }
 
+/* .warning{
+  width: 20rem;
+  height: 7rem;
+  background-color: #c0b1b9;
+  color: #56474F;
+  position: relative;
+  top: 200rem;
+  right: 20rem;
+} */

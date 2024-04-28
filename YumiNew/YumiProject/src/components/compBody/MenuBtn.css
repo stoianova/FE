@@ -1,9 +1,13 @@
+.wrapperFirst > a:nth-child(4) {
+       margin: 42rem 20rem 0rem 49.5rem;
+}
 .menufirst{
-    --glow-color: #56474F;
+letter-spacing: .3rem;
+    --glow-color: #967989;
     --glow-spread-color: #CEA8BB;
     --enhanced-glow-color: #CEA8BB;
     --btn-color: #FAE9F2;
-    border: .08em solid var(--glow-color);
+    border: .0em solid var(--glow-color);
     padding: 0.55em 2.1em;
     color: var(--glow-color);
     font-size: 30px;
@@ -17,6 +21,7 @@
     text-shadow: 0 0 0em var(--glow-color);
     position: relative;
     transition: all 0.3s;
+    margin: 0rem;
    }
    
    .menufirst::after {

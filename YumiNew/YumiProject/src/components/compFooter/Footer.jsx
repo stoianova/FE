@@ -1,8 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWhatsapp, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
-import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 
 const whatsappIcon = <FontAwesomeIcon icon={faWhatsapp} />
@@ -10,6 +9,7 @@ const instagram = <FontAwesomeIcon icon={faInstagram} />
 
 function Footer(props) {
     return (
+        <>
         <div className='footer'>
             <div className="wrapperFooter container">
 
@@ -23,7 +23,7 @@ function Footer(props) {
 
             </div>
         </div>
-
+        </>
     );
 }
 
