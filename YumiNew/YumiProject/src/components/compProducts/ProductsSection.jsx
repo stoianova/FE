@@ -2,6 +2,7 @@ import React from 'react';
 import '../compProducts/ProductsSection.css';
 import listProducts from './Products.jsx';
 import Card from '../compProducts/Card';
+// import {myObj} from './Fetch/MyFetch.jsx'
 
 
 const ProductsSection = ({handleClick}) => {
@@ -11,7 +12,7 @@ const ProductsSection = ({handleClick}) => {
         <section>
             <div id="linkToProducts">
             {
-                listProducts.map((item)=>(
+                /* myObj */ listProducts.map((item)=>(
                     <Card item={item} key={item.id} handleClick={handleClick}/>
                 ))
             }

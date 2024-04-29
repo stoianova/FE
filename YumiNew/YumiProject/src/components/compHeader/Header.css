@@ -16,6 +16,7 @@ body{
   .logo img{
     height: 7rem;
     color: #56474F;
+    cursor: pointer;
   }
   
   .headerContentWrapper{

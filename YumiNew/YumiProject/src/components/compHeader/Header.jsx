@@ -34,7 +34,6 @@ const Header = ({size, setShow}) => {
                             <span>{size}</span>
 
                         </button>
-
                         </div>
                         
 

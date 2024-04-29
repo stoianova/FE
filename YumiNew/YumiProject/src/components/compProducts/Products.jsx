@@ -14,6 +14,7 @@ import Image12 from './fixedMenu/image12-removebg-preview.png'
 import Image13 from './fixedMenu/image13-removebg-preview.png'
 import Image14 from './fixedMenu/image14-removebg-preview.png'
 import Image15 from './fixedMenu/image15-removebg-preview.png'
+// import { myObj } from './Fetch/MyFetch';
 
 
         const listProducts = [
@@ -137,13 +138,5 @@ import Image15 from './fixedMenu/image15-removebg-preview.png'
             image: Image15,
             amount: 1
         }];
-
-
-
-
-
-
-
-
 
 export default listProducts;

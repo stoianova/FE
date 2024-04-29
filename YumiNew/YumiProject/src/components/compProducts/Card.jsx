@@ -15,7 +15,7 @@ const Card = ({item, handleClick}) => {
             <div className="top">
                 <h2 className='name'> {name} </h2>
                 <h2 className='localname'> {localname} </h2>
-                <h3 className='price'> {price} </h3>
+                <h3 className='price'> $ {price} </h3>
             </div>
 
             <div className="bottom">

@@ -3,9 +3,14 @@ import './TakeAwayForm.css'
 import './DeliveryForm.css';
 import {validName, validNumber} from './RegEx';
 import Cart from './Cart';
+// import {myObj} from './Fetch/MyFetch';
+import Timer from './Timer'
+import App from '../../App'
 
 
-function TakeAwayForm({setAway, cart}) {
+function TakeAwayForm({setAway, cart, setShow, timerDown, setTimerDown}) {
+    
+    // const [timerDown, setTimerDown] = useState(false)
 
     function firstFun(){
         let name = document.querySelector ('#name');
@@ -25,52 +30,39 @@ function TakeAwayForm({setAway, cart}) {
             let time = document.querySelector ('#time');
             let comments = document.querySelector ('#comments');
 
-            let newObj = {
+            let myObj = {
                 nameNew: '',
                 numberNew: '',
                 timeNew: '',
                 commentsNew: ''
             }
-            newObj.nameNew = name.value
-            newObj.numberNew = number.value
-            newObj.timeNew = time.value
-            newObj.commentsNew = comments.value
+            myObj.nameNew = name.value
+            myObj.numberNew = number.value
+            myObj.timeNew = time.value
+            myObj.commentsNew = comments.value
+
+            let newArr = cart.push(myObj);
+            console.log(newArr);
 
             // let newArr = [cart.push(newObj)]
             // console.log(newArr); 
 
-            localStorage.setItem('.order', JSON.stringify(newObj));
+            localStorage.setItem('.order', JSON.stringify(myObj));
 
             setTimeout(function another(){
+
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
                 }
             }, 0)
     }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            // let prodName = document.querySelector ('.cartItemName');
-            // let prodAmount = document.querySelector ('.cartItemAmount');
-            // let prodPrice = document.querySelector ('.cartItemPrice');
-
-            // let newProd = {
-            //     newprodName: '',
-            //     newprodAmount: '',
-            //     newprodPrice: ''
-            // }
-            // newProd.newprodName = prodName.value
-            // newProd.newprodAmount = prodAmount.value
-            // newProd.newprodPrice = prodPrice.value
-
-            // localStorage.setItem('.orderProducts', JSON.stringify(newProd));
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
     return (
         <>
         <div className="takeAwayForm">
-            <form action='' onChange={firstFun} onSubmit={secondFun}>
+            <form action='' onChange={firstFun} onSubmit={secondFun} >
                     <div className="orderText"> Your details for TAKE AWAY </div>
 
                 <div className="innerFormDiv">
@@ -95,9 +87,11 @@ function TakeAwayForm({setAway, cart}) {
 
             <div className="takeBtns">
                 <div className="btnBack" onClick={() => setAway(true)} >Back</div>
-                <input type="submit" id="submitButton" value="Send" disabled /> 
+                <input type="submit" id="submitButton" value="Send" disabled onClick={() => setTimerDown(true)} setShow={undefined}/> 
             </div>    
-
+                {/* {
+                    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
+                }  */}
             </form>
             
         </div>

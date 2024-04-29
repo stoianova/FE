@@ -6,14 +6,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import DeliveryForm from './DeliveryForm';
 import TakeAwayForm from './TakeAwayForm';
+import Timer from './Timer';
 
 // let cart = [];
 
-const Cart = ({cart, setCart, /* setShow, */ handleChange}) => {
+const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
 
     const [price, setPrice] = useState(0);
     const [delivery, setDelivery] = useState(true);
     const [away, setAway] = useState(true);
+    // const [timerDown, setTimerDown] = useState(false)
+
 
     const closeMark = <FontAwesomeIcon icon={faXmark}/*  setShow={setShow} *//>
 
@@ -40,7 +43,7 @@ const Cart = ({cart, setCart, /* setShow, */ handleChange}) => {
         return <OrderTypeForm setDelivery={setDelivery} setAway={setAway}/>
         }
         else if (delivery === true && away !== true){ 
-        return <TakeAwayForm setAway={setAway}/>
+        return <TakeAwayForm setAway={setAway} setShow={setShow} cart={cart} setTimerDown={setTimerDown}/>
         }
         else if (delivery !== true && away === true){ 
         return <DeliveryForm setDelivery={setDelivery}/>
@@ -48,7 +51,13 @@ const Cart = ({cart, setCart, /* setShow, */ handleChange}) => {
     }
 
     return (
+
+    
         <article>
+
+                {/* {
+                    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
+                } */}
            
 
                 <div className="leftSideCart"> 

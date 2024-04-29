@@ -4,9 +4,7 @@ import Header from './components/compHeader/Header';
 import ProductsSection from './components/compProducts/ProductsSection'
 import Footer from './components/compFooter/Footer';
 import Cart from './components/compProducts/Cart';
-
-
-
+import Timer from './components/compProducts/Timer';
 
 
 const App = () => {
@@ -14,6 +12,7 @@ const App = () => {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
   const [warning, setWarning] = useState(false);
+  // const [timerDown, setTimerDown] = useState(false)
 
   const handleClick = (item) => {
     let isPresent = false;
@@ -46,6 +45,18 @@ const App = () => {
     setCart([...tempArr])
   }
 
+  function changeFromCartToTimer (){
+    if(show===true){
+      return <ProductsSection handleClick={handleClick}/>
+    }
+    else if (show === false) {
+      return <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
+    }
+    else if( show === undefined & timerDown === true){
+      return <Timer setShow={setShow} setTimerDown={setTimerDown}/>
+    }
+  }
+
 
 
   return (
@@ -53,13 +64,19 @@ const App = () => {
       <Header size={cart.length} setShow={setShow}/>
 
       {
-        show ? <ProductsSection handleClick={handleClick} /* setShow={setShow} *//> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
+        show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
       }
 
+      {/* {
+        changeFromCartToTimer()
+      } */}
+
       {
-        warning && <div className='warning'>Item already added to your cart</div>
+        timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
       }
+
       <Footer/>
+
         
 
 

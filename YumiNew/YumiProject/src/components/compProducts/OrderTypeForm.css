@@ -9,7 +9,7 @@
 }
 .deliveryType button{
     letter-spacing: 0.1rem;
-    width: 18rem;
+    /* width: 18rem; */
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
