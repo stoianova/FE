@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 import './TakeAwayForm.css'
 import './DeliveryForm.css';
 import {validName, validNumber} from './RegEx';
 import Cart from './Cart';
 // import {myObj} from './Fetch/MyFetch';
 import Timer from './Timer'
-import App from '../../App'
+import App, { Basket } from '../../App'
 
 
 function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
-    
     // const [timerDown, setTimerDown] = useState(false)
+
+    const basket = useContext(Basket);
 
     function firstFun(){
         let name = document.querySelector ('#name');
@@ -29,23 +30,24 @@ function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
             let number = document.querySelector ('#number');
             let time = document.querySelector ('#time');
             let comments = document.querySelector ('#comments');
+            // let orderProd = <Basket/>;
 
             let myObj = {
                 nameNew: '',
                 numberNew: '',
                 timeNew: '',
                 commentsNew: ''
+                // orderProdNew: ''
             }
             myObj.nameNew = name.value
             myObj.numberNew = number.value
             myObj.timeNew = time.value
             myObj.commentsNew = comments.value
+            // myObj.orderProdNew = orderProd.value
 
-            let newArr = cart.push(myObj);
-            console.log(newArr);
-
-            // let newArr = [cart.push(newObj)]
-            // console.log(newArr); 
+            let newArr = [cart.push(myObj)]
+            console.log(cart); 
+            // console.log(cart.push(myObj));
 
             localStorage.setItem('.order', JSON.stringify(myObj));
 
@@ -57,7 +59,6 @@ function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
                 }
             }, 0)
     }
-
 
     return (
         <>

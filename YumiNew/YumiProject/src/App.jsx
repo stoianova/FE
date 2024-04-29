@@ -1,10 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, createContext} from 'react';
 import './App.css';
 import Header from './components/compHeader/Header';
 import ProductsSection from './components/compProducts/ProductsSection'
 import Footer from './components/compFooter/Footer';
 import Cart from './components/compProducts/Cart';
 import Timer from './components/compProducts/Timer';
+import TakeAwayForm from './components/compProducts/TakeAwayForm';
+
+export const Basket = createContext();
 
 
 const App = () => {
@@ -57,14 +60,16 @@ const App = () => {
   //   }
   // }
 
- {
+  {
     timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
   } 
      
 
   return (
-    <>
+    <Basket.Provider value={cart}>
+
       <Header size={cart.length} setShow={setShow}/>
+      <h1>{`Hello ${cart}`}</h1>
 
       {
         show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
@@ -82,7 +87,7 @@ const App = () => {
     
 
 
-    </>
+    </Basket.Provider>
   )
  
 

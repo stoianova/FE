@@ -8,7 +8,6 @@ import DeliveryForm from './DeliveryForm';
 import TakeAwayForm from './TakeAwayForm';
 import Timer from './Timer';
 
-// let cart = [];
 
 const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
 
@@ -56,7 +55,6 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
 
     return (
 
-    
         <article>
 
                 {/* {
@@ -111,7 +109,6 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
     );
 
 }
-// console.log(cart)
 
 export default Cart;
 
