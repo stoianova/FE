@@ -12,7 +12,7 @@ const App = () => {
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
   const [warning, setWarning] = useState(false);
-  // const [timerDown, setTimerDown] = useState(false)
+  const [timerDown, setTimerDown] = useState(false)
 
   const handleClick = (item) => {
     let isPresent = false;
@@ -45,43 +45,47 @@ const App = () => {
     setCart([...tempArr])
   }
 
-  function changeFromCartToTimer (){
-    if(show===true){
-      return <ProductsSection handleClick={handleClick}/>
-    }
-    else if (show === false) {
-      return <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
-    }
-    else if( show === undefined & timerDown === true){
-      return <Timer setShow={setShow} setTimerDown={setTimerDown}/>
-    }
-  }
+  // function changeFromCartToTimer (){
+  //   if(show===true){
+  //     return <ProductsSection handleClick={handleClick}/>
+  //   }
+  //   else if (show === false) {
+  //     return <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
+  //   }
+  //   else if( show === undefined & timerDown === true){
+  //     return <Timer setShow={setShow} setTimerDown={setTimerDown}/>
+  //   }
+  // }
 
-
+ {
+    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
+  } 
+     
 
   return (
     <>
       <Header size={cart.length} setShow={setShow}/>
 
       {
-        show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
+        show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
       }
 
       {/* {
         changeFromCartToTimer()
       } */}
 
-      {
-        timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
-      }
+      {/* {
+        warning 'Item already added to your cart'
+      } */}
 
       <Footer/>
-
-        
+    
 
 
     </>
   )
+ 
+
 }
 
 export default App

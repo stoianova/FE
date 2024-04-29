@@ -48,6 +48,10 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
         else if (delivery !== true && away === true){ 
         return <DeliveryForm setDelivery={setDelivery}/>
         }
+        // else if(delivery===true && away=== false && timerDown === true) {
+        // return <Timer/>
+        // }
+        
     }
 
     return (

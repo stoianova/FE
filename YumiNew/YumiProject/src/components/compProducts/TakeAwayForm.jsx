@@ -8,7 +8,7 @@ import Timer from './Timer'
 import App from '../../App'
 
 
-function TakeAwayForm({setAway, cart, setShow, timerDown, setTimerDown}) {
+function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
     
     // const [timerDown, setTimerDown] = useState(false)
 
@@ -87,7 +87,8 @@ function TakeAwayForm({setAway, cart, setShow, timerDown, setTimerDown}) {
 
             <div className="takeBtns">
                 <div className="btnBack" onClick={() => setAway(true)} >Back</div>
-                <input type="submit" id="submitButton" value="Send" disabled onClick={() => setTimerDown(true)} setShow={undefined}/> 
+                <input type="submit" id="submitButton" value="Send" disabled /* onClick={() => setTimerDown(true)} setShow={undefined} *//> 
+                <button onClick={() => setTimerDown(true)}>button</button>
             </div>    
                 {/* {
                     timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
