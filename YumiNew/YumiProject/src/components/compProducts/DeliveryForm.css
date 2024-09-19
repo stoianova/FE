@@ -11,8 +11,8 @@
     color: #4D5E7C; 
     margin: 1rem;
     padding: 1rem 0rem; 
-    height: 22rem;/* 18rem; */
-    overflow: scroll;
+    height: 100%;
+    overflow-y: scroll;
 }
 .orderText{
     margin: 2rem auto;
@@ -24,12 +24,12 @@ input{
     border-radius: 8px;
     box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
     background: rgb(254, 254, 255);
-    padding: 1rem 1.5rem;
+    padding: .3rem 1.5rem;
     margin-bottom: .5rem;
     margin-left: 2rem;
 }
 #comments{
-    height: 5rem;
+    height: 10%;
     text-align: start;
     overflow-y: scroll;
 } 
@@ -41,7 +41,7 @@ label{
     margin: 2rem auto 1rem;
     background-color: #4D5E7C;
     color: white;
-    width: 18rem;
+    width: 80%;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 17px;
@@ -72,11 +72,9 @@ label{
 .biggerDelForm{
     height: 30rem;
     overflow: scroll;
-
 }
 .innerFormDiv{
     margin-right: 2rem;
-    /* width: 25rem; */
 }
 .deliveryForm{
     width: 50%;
@@ -87,14 +85,3 @@ label{
     box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
     background-color: rgb(254, 254, 255);
 }
-
-/* #alert{
-    width: 50rem;
-    height: 10rem;
-    background-color: blue;
-    position: absolute;
-    top: 20rem;
-    right: 50rem;
-    z-index: 3;
-    color: aliceblue;
-} */

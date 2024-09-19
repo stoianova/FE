@@ -2,11 +2,6 @@ body{
     color: #56474F ;
   }
 
-  .loginBtn{
-    width: 10rem;
-    height: 2rem;
-  }
-  
   header{
     width: 100%;
     display: flex;
@@ -16,62 +11,9 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-    height: 7rem;
-  }
-  @media(max-width: 1200px) {
-    ul{
-      display: flex;
-      flex-wrap: wrap;
-      /* flex-direction: column; */
-      }
-    li{
-      font-size: 1rem;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-    }
-    .logo img{
-      height: 2rem;
-    }
-
-  }
-  
-  .logo img{
-    height: 7rem;
-    color: #56474F;
-    cursor: pointer;
-  }
-  
-  .headerContentWrapper{
-    margin-left: 5rem; 
-    margin-right: 5rem; 
-  }
-  
-  ul{
-    display: flex;
-    font-size: 1.5rem;
-    outline: none;
-    
-  }
-  li{
-    list-style: none;
-    margin: 3rem 4rem 1rem 4rem;
-    cursor:  pointer;
-    width: 7rem;
-    letter-spacing: .3rem;
-  }
-  li:hover{
-    color: #ffffff;
-    font-size: larger;
-  }
-
-  .headerContentWrapper > ul:nth-child(2) > a:nth-child(1),
-  .headerContentWrapper > ul:nth-child(2) > a:nth-child(2),
-  .headerContentWrapper > ul:nth-child(2) > a:nth-child(3){
-    color: #56474F;
-    text-decoration: none;
+    height: 6rem;
   }
   .buttonAddHeader{
-    width: 3%;
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -83,8 +25,15 @@ body{
     font-size: 17px;
     transition: all 250ms;
     overflow: hidden;
+    display: flex;
+    width: 4rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
    }
-   
+
+
    .buttonAddHeader::before{
     content: "";
     position: absolute;
@@ -107,25 +56,8 @@ body{
    .buttonAddHeader:hover::before{
     width: 100%;
    }
-  
-  .buttonAddHeader{
-    display: flex;
-    width: 4rem;
-    height: 2.5rem;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .headerRight{
-    display: flex;
-    width: 20rem;
-    padding-top: 1.6rem;
-    margin-left: 10rem;
-  }
-  
-  span{
+
+  .countCartHead{
     background-color: #c2d0e8;
       border-radius: 79%;
       padding: 0rem 0.4rem 0rem 0.4rem;
@@ -137,5 +69,16 @@ body{
       right: .2rem;
     }
 
-
-
+.logoNewHead{
+  height: 6rem;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+.nav-link{
+  width: 8rem;
+  font-size: 1.4rem;
+  letter-spacing: .3rem;
+}
+.nav-link:hover{
+  color: #ffffff;
+}

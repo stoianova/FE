@@ -1,13 +1,10 @@
 import React, {useContext} from 'react';
 import './DeliveryForm.css';
-// import {myObj} from './Fetch/MyFetch';
-import {validName, validNumber, validStreet, validBuildNum, validApart} from './RegEx';
-import Cart from './Cart';
-import App, { Basket } from '../../App'
-import Timer from './Timer'
+import { Basket } from '../../App'
 
 
-function DeliveryForm({setDelivery, cart, setTimerDown}) {
+
+function DeliveryForm({setDelivery, setCart, setTimerDown}) {
 
     const basket = useContext(Basket);
 
@@ -17,26 +14,12 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
         let street = document.querySelector ('#street');
         let build = document.querySelector ('#build');
         let apart = document.querySelector ('#apart');
+        let comments = document.querySelector ('#comments');
 
 
-        if(validNumber.test(number.value) && validName.test(name.value) && validStreet.test(street.value) && validBuildNum.test(build.value) && validApart.test(apart.value)){
+        if(number.value.length === 12 && name.value.length >=1 && street.value.length >=1 && build.value.length >=1 && apart.value.length >=1 && comments.value.length >=1 ){
             submitButton.removeAttribute('disabled')
         }
-        // else if(validName.test(name)){
-        //     myAlert.innerHTML = '<p>Your name is invalid</p>';
-        // }
-        // else if(validNumber.test(number)){
-        //     myAlert.innerHTML = '<p>Your number should starts from 0*********</p>';
-        // }        
-        // else if(validStreet.test(street)){
-        //     myAlert.innerHTML = '<p>Your street should contain letters only</p>';
-        // }        
-        // else if(validBuildNum.test(build)){
-        //     myAlert.innerHTML = '<p>Your building number should contain digits only</p>';
-        // }
-        // else if(validApart.test(apart)){
-        //     myAlert.innerHTML = '<p>Your apartment should contain digits only</p>';
-        // }
         else{
             submitButton.setAttribute('disabled', true)
         }   
@@ -101,6 +84,9 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
 
             setTimeout(function another(){
+                setCart([])
+                setMinutes(29)
+                setSeconds(59)
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
@@ -109,10 +95,10 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
     return (
         <div className="takeAwayForm">
+        
             <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun}>
-                    <div className="orderText"> Your details for DELIVERY </div>
+                    <div className="orderText"> Your details for DELIVERY  </div>
 
-                {/* <div className='biggerDelForm'> */}
                 <div className="innerFormDiv">
                 <div className='orderForm'>
 
@@ -132,8 +118,8 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <label htmlFor="apart">Apartment number *</label>
                 <input type="number" name="apart" id="apart"/> 
 
-                <label htmlFor="comments">Comments:</label>
-                <input type="text" name="comments" id="comments"/> 
+                <label htmlFor="comments">Comments: *</label>
+                <input type="text" name="comments" id="comments" defaultValue={"Have a good day!"}/> 
                 
                 </div>
             </div>
@@ -141,9 +127,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <div className="takeBtns">
 
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
-                    <input type="submit" id="submitButton" value="Send" disabled /> 
-                    
-                    {/* <button onClick={() => setTimerDown(true)}>button</button> */}
+                    <button type="submit" id="submitButton" disabled>Send</button>
                 </div>
 
             </form>

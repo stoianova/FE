@@ -6,10 +6,10 @@
     border-bottom-right-radius: .8rem;
     box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
     background-color: rgb(254, 254, 255);
+    
 }
 .deliveryType button{
     letter-spacing: 0.1rem;
-    /* width: 18rem; */
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -18,9 +18,10 @@
     background: #deebff3c;
     position: relative;
     font-size: 17px;
-    margin: 1rem 2rem;
+    margin: 1rem auto; 
     transition: all 250ms;
     overflow: hidden;
+    
 }
 .deliveryType button:hover{
     color: #ffffff;
@@ -45,8 +46,8 @@
 
 .innerRighrSide p {
     
-    margin: 1rem 4rem;
-    text-align: center;
+    margin: auto;
+    justify-content: center;    text-align: center;
     padding-bottom: 1rem;
     display: flex;
     width: 100%;    
@@ -57,7 +58,7 @@
 
 .btnBack{
     width: 5rem;
-    height: 3rem;
+    height: 10%;
     text-align: center;
     padding: 0.5rem 0rem;
     border: unset;
@@ -71,6 +72,7 @@
     transition: all 250ms;
     overflow: hidden;
     cursor: pointer;
+    text-align: center;
 }
 .btnBack:hover{
     color: #ffffff;
@@ -142,3 +144,54 @@ svg.fa-circle:nth-child(7){
 }
 
 
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .deliveryType{
+        width: 50%;
+        padding: 0rem .5rem;
+        
+    }
+    
+    
+}
+
+@media (min-width: 460px) and  (max-width: 768px){
+    .infoCartleft{
+        font-size: 70%;
+
+    }
+    .deliveryType{
+        width: 80%;
+        padding: 0rem .5rem;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: .8rem;
+        margin: auto;
+        height: 55vh;
+
+    }
+    input{
+        padding: .2rem .5rem;
+    }
+}
+
+@media (max-width: 460px){
+    .infoCartleft{
+        font-size: 70%;
+
+    }
+    .deliveryType{
+        width: 100%;
+        padding: 0rem .5rem;
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: .8rem;
+        height: 55vh;
+    }
+    input{
+        padding: .2rem .5rem;
+    }
+    .innerRighrSide{
+        margin: 1rem auto;
+        width: 100%;
+    }
+}

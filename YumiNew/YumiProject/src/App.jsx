@@ -2,7 +2,7 @@ import React, {useState, useEffect, createContext} from 'react';
 import './App.css';
 import Header from './components/compHeader/Header';
 import ProductsSection from './components/compProducts/ProductsSection'
-import Footer from './components/compFooter/Footer';
+import Footer from './components/compHeader/Footer';
 import Cart from './components/compProducts/Cart';
 import Timer from './components/compProducts/Timer';
 import TakeAwayForm from './components/compProducts/TakeAwayForm';
@@ -12,10 +12,27 @@ export const Basket = createContext();
 
 const App = () => {
 
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [cart, setCart] = useState([]);
   const [warning, setWarning] = useState(false);
-  const [timerDown, setTimerDown] = useState(false)
+  
+    const [seconds, setSeconds] = useState(59);
+    const [minutes, setMinutes] = useState(30);
+    const [timerDown, setTimerDown] = useState(false);
+
+
+    let timer;
+    useEffect(() => {
+        timer = setInterval(() => {
+            setSeconds(seconds-1)
+            if(seconds===0){
+                setMinutes(minutes-1)
+                setSeconds(59);
+            }
+        },1000)
+        return () => clearInterval(timer);
+    })
+
 
   const handleClick = (item) => {
     let isPresent = false;
@@ -48,42 +65,26 @@ const App = () => {
     setCart([...tempArr])
   }
 
-  // function changeFromCartToTimer (){
-  //   if(show===true){
-  //     return <ProductsSection handleClick={handleClick}/>
-  //   }
-  //   else if (show === false) {
-  //     return <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
-  //   }
-  //   else if( show === undefined & timerDown === true){
-  //     return <Timer setShow={setShow} setTimerDown={setTimerDown}/>
-  //   }
-  // }
-
-  {
-    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
-  } 
+  
      
 
   return (
     <Basket.Provider value={cart}>
-
+      <div className='mediaDivFirst'>
       <Header size={cart.length} setShow={setShow}/>
-
+<ProductsSection handleClick={handleClick} />
       {
-        show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
+        show && <Cart setSeconds={setSeconds}  setMinutes={setMinutes} cart={cart} 
+        setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
       }
+      </div>
+      
       {
-        <Timer />
-      }
-      {/* {
-        warning 'Item already added to your cart'
-      } */}
+    timerDown && <Timer minutes={minutes} seconds={seconds}/>  
+  } 
 
       <Footer/>
     
-
-
     </Basket.Provider>
   )
  
